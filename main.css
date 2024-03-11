@@ -1,1 +1,24 @@
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 350px) {
+  body {
+    background: lime;
+  }
+}
+@media (max-width: 349px) {
+  body {
+    background: blue;
+  }
+}
+.element {
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin: 10px;
+}
+
+div {
+  color: red;
+}
+
+p {
+  color: pink;
+}/*# sourceMappingURL=main.css.map */
