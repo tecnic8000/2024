@@ -3,6 +3,7 @@
     background: pink;
     background-image: url("bg2.jpg");
   }
+  .autoplay1{width: 300px;}
 }
 @media (max-width: 449px) {
   body {
@@ -11,6 +12,7 @@
     background-image: url("bg.jpg");
     
   }
+  .autoplay1{width: 85%;}
 }
 @font-face{
   font-family: "Retron2000";
@@ -39,53 +41,29 @@ footer {
   position: absolute;
   bottom:0
 }
-.element {
-  width: 100px;
-  height: 100px;
-  background: white;
-  margin: 10px;
-}
-.banner1 {
+.shopee1 {
   position: absolute;
-  background:beige;
+  color: lime;
   padding:5px;
   bottom: 15%;
-  left: 5%;
-  font-family: Retro Gaming;
-}
+  font-size: 65pt;
 
+}
 .about1 {
   position: absolute;
-  font-size:16pt;
+  font-size:35pt;
+  text-align: right;
   color:antiquewhite;
   bottom: 15%;
   right:5%;
 }
+.about1 a {color: beige}
 
 .logo1 {
   position: absolute;
-  top:15%;
+  top:20%;
 }
 
-.contact1 {
-  position: absolute;
-  display:inline-block;
-  
-  
-  color: antiquewhite;
-  font-size: 20pt;
-  word-spacing: 10px;
-  top: 14%;
-  right:5%;
-  align-self: center;
-  align-content: center;
-  text-align: center;
-  padding: 10px;
-}
-.contact1 i {
-  position: relative;
-  right: 0;
-}
 
 /*# sourceMappingURL=main.css.map */
 
@@ -94,7 +72,6 @@ footer {
   display:block;
   z-index: -1;
   padding: 0px;
-  width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
