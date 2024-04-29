@@ -1,12 +1,43 @@
-@media (min-width: 350px) {
+@media (min-width: 450px) {
   body {
-    background: lime;
+    background: pink;
+    background-image: url("bg2.jpg");
   }
 }
-@media (max-width: 349px) {
+@media (max-width: 449px) {
   body {
-    background: blue;
+    background: grey;
+    background-image: url("bg2.jpg");
+    background-image: url("bg.jpg");
+    
   }
+}
+@font-face{
+  font-family: "Retron2000";
+  src: url("powerpuff girls font.ttf");
+}
+@font-face{
+  font-family: "Retro Gaming";
+  src: url("Retro Gaming.ttf");
+}
+* {font-family: Retron2000;}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+header {
+  color: white;
+  z-index: 99;
+  background: black;
+}
+footer {
+  color: white;
+  z-index: 99;
+  display: inline-block;
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom:0
 }
 .element {
   width: 100px;
@@ -14,112 +45,68 @@
   background: white;
   margin: 10px;
 }
-
-div {
-  color: lime;
-}
-
-p {
-  color: pink;
-}/*# sourceMappingURL=main.css.map */
-
-
-/* 
-   Creator           : Coding's Time
-   Youtube Channel   : https://www.youtube.com/channel/UC6dnKqrImGWqMb9ty1n0Ziw
-   Github Profile    : https://github.com/codingstime
- */
-
-/* reset */
-:root{
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-*{
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* carousel */
-.carousel_inner{
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel_inner::after{
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.carousel_item{
-  position: relative;
-  float: left;
-  display: none;
-  width: 100%;
-  margin-right: -100%;
-}
-
-/* slide effect */
-.carousel_item__active,
-.carousel_item__pos_next{
-  display: block;
-}
-
-.carousel_item__pos_next{
-  left: 100%;
-}
-
-.carousel_item__next{
-  transform: translateX(-100%);
-  transition: transform .5s ease-in-out;
-}
-
-/* fade effect */
-.carousel__fade .carousel_item__pos_next{
-  left: 0;
-  opacity: 0;
-}
-
-.carousel__fade .carousel_item__next{
-  transform: none;
-  opacity: 1;
-  transition: opacity .5s ease-in-out;
-}
-
-.carousel__fade .carousel_item__active.carousel_item__next{
-  opacity: 0;
-}
-
-/* carousel */
-.carousel_img{
-  display: block;
-  width: 100%;
-}
-
-.carousel_caption{
+.banner1 {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background:beige;
+  padding:5px;
+  bottom: 15%;
+  left: 5%;
+  font-family: Retro Gaming;
+}
+
+.about1 {
+  position: absolute;
+  font-size:16pt;
+  color:antiquewhite;
+  bottom: 15%;
+  right:5%;
+}
+
+.logo1 {
+  position: absolute;
+  top:15%;
+}
+
+.contact1 {
+  position: absolute;
+  display:inline-block;
+  
+  
+  color: antiquewhite;
+  font-size: 20pt;
+  word-spacing: 10px;
+  top: 14%;
+  right:5%;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.contact1 i {
+  position: relative;
+  right: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
+.autoplay1{
+  display:block;
+  z-index: -1;
+  padding: 0px;
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#layer_crt {
+  pointer-events: none;
+  z-index: 100;
   width: 100%;
   height: 100%;
-  padding: 3rem 2.5rem;
-  text-align: center;
-  color: #fff;
-  z-index: 1;
-}
-
-.carousel_title{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-
-.carousel_description{
-  margin-top: .75rem;
-  line-height: 150%;
+  position: fixed;
+  opacity: 0.5;
+  padding: 0px 0px 0px 0px;
 }
