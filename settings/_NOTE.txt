@@ -1,0 +1,30 @@
+"
+export skeletal mesh to unreal
+
+BLENDER
+-properties window/scene/units/unit scale 1-->0.01
+-3d window/viewport overlays/guides scale 1-->0.01
+-first bone named to 'root'
+-parent with automatic weight, apply transform(skeleton 1st then mesh)
+
+
+-exportSetting
+    Smoothing: Normal Only --> Face  
+    limit to Selected Objects: TRUE
+    add leaf bones: FALSE
+    onle deform bones: TRUE
+    
+    ### Rig-Only
+    Bake Animation: FALSE
+    
+    NLA Strips: FALSE
+    
+UNREAL (test setting)
+    ### Rig-Only
+    Import Animation:
+    
+"
+
+21/04/2024 unreal demo keywords
+?
+?procedural materials: vertex data, curvature map, AO map, height map

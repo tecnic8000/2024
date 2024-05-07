@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MaxHotkeyTransformations Locked="false">
+    <Unassign_Hotkey Shortcut=";" Description="Repeat Last Operation" Id="1250838234-40052"/>
+    <Unassign_Hotkey Shortcut=";" Description="Repeat Last Operation" Id="369982487-40052"/>
+    <Unassign_Hotkey Shortcut="Shift+;" Description="Selected Particle Emission Toggle" Id="135018555-32900"/>
+    <Unassign_Hotkey Shortcut="\" Description="Sound Toggle" Id="0-40204"/>
+    <Unassign_Hotkey Shortcut="Y" Description="Smart Place" Id="647394-SmartPlace`Tools"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Y" Description="Redo Scene Operation" Id="0-40016"/>
+    <Unassign_Hotkey Shortcut="Shift+Y" Description="Redo Viewport Operation" Id="0-40101"/>
+    <Unassign_Hotkey Shortcut="," Description="Backup Time One Unit" Id="0-50020"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+," Description="Decrease Walk Speed" Id="1920373764-51"/>
+    <Unassign_Hotkey Shortcut="." Description="Forward Time One Unit" Id="0-50022"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+." Description="Increase Walk Speed" Id="1920373764-50"/>
+    <Unassign_Hotkey Shortcut="/" Description="Play Animation" Id="0-50021"/>
+    <Unassign_Hotkey Shortcut="Num+/" Description="Virtual Viewport Toggle" Id="0-368"/>
+    <Unassign_Hotkey Shortcut="`" Description="Redraw All Views" Id="0-40130"/>
+    <Unassign_Hotkey Shortcut="Alt+`" Description="Show End Result" Id="647394-Show_End_Result_Toggle`Modifier Stack"/>
+    <Unassign_Hotkey Shortcut="Ctrl+`" Description="Show Floating Dialogs" Id="0-63446"/>
+    <Unassign_Hotkey Shortcut="J" Description="Windows" Id="1261319018-Windows"/>
+    <Unassign_Hotkey Shortcut="Alt+J" Description="Selection/Preview Highlights Toggle" Id="0-470"/>
+    <Unassign_Hotkey Shortcut="Shift+J" Description="Viewport Selection Show Selection Bracket Toggle" Id="0-370"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+J" Description="Tour Building Wheel" Id="1920373764-57"/>
+    <Unassign_Hotkey Shortcut="K" Description="Add/Remove Keys" Id="1-280"/>
+    <Unassign_Hotkey Shortcut="K" Description="Set Key" Id="972555510-40015"/>
+    <Unassign_Hotkey Shortcut="K" Description="Set Keys" Id="0-40800"/>
+    <Unassign_Hotkey Shortcut="Alt+K" Description="Reset All Limb Keys" Id="972555510-40131"/>
+    <Unassign_Hotkey Shortcut="Alt+Z" Description="Zoom" Id="1-2200"/>
+    <Unassign_Hotkey Shortcut="Alt+Z" Description="Zoom" Id="2077580866-45326"/>
+    <Unassign_Hotkey Shortcut="Alt+Z" Description="Zoom Mode" Id="0-50013"/>
+    <Unassign_Hotkey Shortcut="Alt+Z" Description="Zoom Tool" Id="369891408-55562"/>
+    <Unassign_Hotkey Shortcut="Alt+Z" Description="Use Zoom Tool" Id="5-700"/>
+    <Unassign_Hotkey Shortcut="Shift+Z" Description="Undo Viewport Operation" Id="0-40104"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+Z" Description="Switch To Curve CV Level" Id="888304868-30023"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Zoom Extents" Id="0-330"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Zoom Extents" Id="5-800"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Zoom Extents" Id="369891408-40070"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Zoom Extents" Id="2077580866-40029"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Zoom Extents" Id="3-133"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+Z" Description="Zoom Extents All" Id="0-331"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Frame Horizontal Extents" Id="1-2180"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+Z" Description="Pop Zerosized" Id="1909744250-40023"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Shift+Z" Description="Zoom Out 2X" Id="0-297"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Shift+Z" Description="Frame Horizontal Extents Keys" Id="1-2190"/>
+    <Unassign_Hotkey Shortcut="Shift+X" Description="Constrain to Edges" Id="1250838234-40084"/>
+    <Unassign_Hotkey Shortcut="Shift+X" Description="Constrain to Edges" Id="369982487-40084"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Back" Id="1909744250-40041"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Back Polygons" Id="2077580866-40067"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+X" Description="Expert Mode Toggle" Id="0-40264"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Alt+Shift+X" Description="Keyboard Shortcut Override Toggle" Id="0-30761"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Backfacing Toggle (Poly)" Id="647394-EPoly_IgnoreBack_Toggle`Editable Polygon Object"/>
+    <Unassign_Hotkey Shortcut="Alt+X" Description="Display as See-Through Toggle" Id="0-373"/>
+    <Unassign_Hotkey Shortcut="X" Description="Launch Global Search" Id="39081-32653"/>
+    <Unassign_Hotkey Shortcut="Ctrl+X" Description="Cut Selected In Data View" Id="817457935-40007"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Backfacing in Selections" Id="1250838234-40012"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Backfacing in Selections" Id="951718758-40012"/>
+    <Unassign_Hotkey Shortcut="Alt+Shift+X" Description="Ignore Backfacing in Selections" Id="369982487-40012"/>
+    <Unassign_Hotkey Shortcut="Num+8" Description="Virtual Viewport Pan Up" Id="0-362"/>
+    <Unassign_Hotkey Shortcut="Num+6" Description="Virtual Viewport Pan Right" Id="0-365"/>
+    <Unassign_Hotkey Shortcut="Num+4" Description="Virtual Viewport Pan Left" Id="0-364"/>
+    <Unassign_Hotkey Shortcut="Num+2" Description="Virtual Viewport Pan Down" Id="0-363"/>
+    <Unassign_Hotkey Shortcut="Num++" Description="Virtual Viewport Zoom In" Id="0-367"/>
+    <Assign_Hotkey Shortcut="'" Description="Symmetry Modifier" Id="647394-Symmetry`Modifiers"/>
+    <Assign_Hotkey Shortcut="\" Description="Collapse" Id="951718758-40024"/>
+    <Assign_Hotkey Shortcut="Ctrl+\" Description="Make Preview" Id="2-1402"/>
+    <Assign_Hotkey Shortcut="Alt+\" Description="Schematic View (Open)" Id="0-50061"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+\" Description="Hide Space Warps Toggle" Id="0-40188"/>
+    <Assign_Hotkey Shortcut="Shift+Y" Description="Flip Face Normals (Poly)" Id="647394-EPoly_FFlip`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Shift+F4" Description="Unlink Selected" Id="5-1200"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+F4" Description="Show Ribbon" Id="60545-26914"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+F4" Description="Expert Mode Toggle" Id="0-40264"/>
+    <Assign_Hotkey Shortcut="J" Description="Wireframe / Smooth+Highlights Toggle" Id="0-272"/>
+    <Assign_Hotkey Shortcut="Shift+J" Description="Select and Link" Id="0-50010"/>
+    <Assign_Hotkey Shortcut="Alt+J" Description="Reaction Manager..." Id="647394-OpenReactionManager`Animation Tools"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+J" Description="Hide Selected" Id="647394-HideSelected`Ribbon - Modeling"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+K" Description="Hide Grids Toggle" Id="0-40077"/>
+    <Assign_Hotkey Shortcut="X" Description="Isolate Selection Toggle" Id="0-268"/>
+    <Assign_Hotkey Shortcut="Ctrl+X" Description="Redo Scene Operation" Id="0-40016"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+X" Description="Toggle xView See-Through" Id="647394-xView_See_Through`xView"/>
+    <Unassign_Hotkey Shortcut="Left" Description="Left" Id="1127307088-19"/>
+    <Unassign_Hotkey Shortcut="Left" Description="Nudge Keys Left" Id="1-40329"/>
+    <Unassign_Hotkey Shortcut="Left" Description="Go Backward to Sibling" Id="2-1401"/>
+    <Unassign_Hotkey Shortcut="Left" Description="Previous Bookmark" Id="5-6130"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Left" Description="Retime Move Left" Id="1-40879"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Left" Description="Rotate -90" Id="2077580866-40256"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Left" Description="Select Previous in U" Id="888304868-30005"/>
+    <Unassign_Hotkey Shortcut="Up" Description="Move Highlight Up" Id="1-40331"/>
+    <Unassign_Hotkey Shortcut="Up" Description="Forward" Id="1127307088-15"/>
+    <Unassign_Hotkey Shortcut="Up" Description="Go to Parent" Id="2-1398"/>
+    <Unassign_Hotkey Shortcut="Up" Description="WalkThrough View Mode" Id="647394-WalkThroughToggle`Views"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Scroll Up" Id="1-40335"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Expand Selection" Id="1909744250-40011"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Grow Selection" Id="1250838234-40037"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Grow Selection" Id="369982487-40037"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Grow Selection (Poly)" Id="647394-EPoly_Grow`Editable Polygon Object"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Select Next in V" Id="888304868-30006"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Up" Description="Texture Vertex Expand Selection" Id="2077580866-40011"/>
+    <Unassign_Hotkey Shortcut="Shift+Up" Description="Up" Id="1127307088-51"/>
+    <Unassign_Hotkey Shortcut="Right" Description="Right" Id="1127307088-21"/>
+    <Unassign_Hotkey Shortcut="Right" Description="Nudge Keys Right" Id="1-40330"/>
+    <Unassign_Hotkey Shortcut="Right" Description="Go Forward to Sibling" Id="2-1400"/>
+    <Unassign_Hotkey Shortcut="Right" Description="Next Bookmark" Id="5-6120"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Right" Description="Retime Move Right" Id="1-40880"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Right" Description="Rotate +90" Id="2077580866-40255"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Right" Description="Select Next in U" Id="888304868-30004"/>
+    <Unassign_Hotkey Shortcut="Down" Description="Move Highlight Down" Id="1-40332"/>
+    <Unassign_Hotkey Shortcut="Down" Description="Back" Id="1127307088-17"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Scroll Down" Id="1-40336"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Select Previous in V" Id="888304868-30007"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Shrink Selection" Id="1250838234-40040"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Shrink Selection" Id="369982487-40040"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Shrink Selection (Poly)" Id="647394-EPoly_Shrink`Editable Polygon Object"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Down" Description="Texture Vertex Contract Selection" Id="2077580866-40012"/>
+    <Unassign_Hotkey Shortcut="Shift+Down" Description="Down" Id="1127307088-52"/>
+    <Assign_Hotkey Shortcut="Num+9" Description="Transform Type-In Dialog Toggle" Id="0-40093"/>
+    <Assign_Hotkey Shortcut="K" Description="Show End Result" Id="2-10062"/>
+    <Assign_Hotkey Shortcut="K" Description="Show End Result" Id="647394-Show_End_Result_Toggle`Modifier Stack"/>
+    <Assign_Hotkey Shortcut="." Description="Connect" Id="1250838234-40061"/>
+    <Assign_Hotkey Shortcut="." Description="Connect" Id="369982487-40061"/>
+    <Assign_Hotkey Shortcut="," Description="Cut" Id="1250838234-40015"/>
+    <Assign_Hotkey Shortcut="," Description="Cut" Id="369982487-40015"/>
+    <Assign_Hotkey Shortcut="Up" Description="Select Object" Id="0-50027"/>
+    <Assign_Hotkey Shortcut="Ctrl+F4" Description="Wireframe / Smooth+Highlights Toggle" Id="0-272"/>
+    <Assign_Hotkey Shortcut="Shift+F4" Description="Display as See-Through Toggle" Id="0-373"/>
+    <Assign_Hotkey Shortcut="/" Description="Swift Loop" Id="647394-SwiftLoop`PolyTools"/>
+    <Unassign_Hotkey Shortcut="Alt+1" Description="Swift Loop" Id="647394-SwiftLoop`PolyTools"/>
+    <Assign_Hotkey Shortcut="`" Description="TurboSmooth Modifier" Id="647394-TurboSmoothMod`Modifiers"/>
+    <Assign_Hotkey Shortcut="Y" Description="Toggle Scene Explorer" Id="647394-SESceneExplorer`Scene Explorer"/>
+    <Assign_Hotkey Shortcut="Ctrl+Y" Description="Toggle Layer Explorer" Id="647394-SELayerExplorer`Scene Explorer"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+F4" Description="Viewport Background" Id="0-40095"/>
+    <Assign_Hotkey Shortcut="Shift+Y" Description="Use Soft Selection" Id="369982487-40029"/>
+    <Assign_Hotkey Shortcut="Shift+Y" Description="Use Soft Selection" Id="1250838234-40029"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+K" Description="Export Selected" Id="0-40373"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+Down" Description="Percent Snap Toggle" Id="0-40223"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+K" Description="Unit Setup" Id="0-40025"/>
+    <Assign_Hotkey Shortcut="Alt+Y" Description="Snapshot" Id="0-40220"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+K" Description="Collapse" Id="1250838234-40024"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+K" Description="Collapse" Id="369982487-40024"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+K" Description="Collapse Stack" Id="647394-Collapse_Stack`Modifier Stack"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+K" Description="Collapse All" Id="1-715"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+Y" Description="Hotkey Editor" Id="0-59245"/>
+    <Assign_Hotkey Shortcut="Down" Description="Vertex Level" Id="43597487-40078"/>
+    <Assign_Hotkey Shortcut="Down" Description="Vertex Level" Id="1250838234-40003"/>
+    <Assign_Hotkey Shortcut="Down" Description="Vertex Level" Id="951718758-40003"/>
+    <Assign_Hotkey Shortcut="Down" Description="Vertex Level" Id="369982487-40003"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+Left" Description="Left View" Id="0-40061"/>
+    <Assign_Hotkey Shortcut="Alt+Left" Description="Grow Selection" Id="1250838234-40037"/>
+    <Assign_Hotkey Shortcut="Alt+Left" Description="Grow Selection" Id="369982487-40037"/>
+    <Assign_Hotkey Shortcut="Alt+Left" Description="Grow selection" Id="647394-GrowSelection`Ribbon - Modeling"/>
+    <Assign_Hotkey Shortcut="Shift+Up" Description="Constrain to None" Id="369982487-41012"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Left" Description="Group" Id="0-40140"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+Left" Description="Group Attach" Id="0-40146"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+Right" Description="Group Close" Id="0-40143"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+Right" Description="Group Detach" Id="0-40144"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+Left" Description="Group Open" Id="0-40142"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Right" Description="Ungroup" Id="0-40141"/>
+    <Assign_Hotkey Shortcut="Left" Description="Face Level" Id="43597487-40080"/>
+    <Assign_Hotkey Shortcut="Ctrl+Up" Description="Ring" Id="647394-Ring`PolyTools"/>
+    <Assign_Hotkey Shortcut="Shift+Right" Description="Constrain to Edges" Id="1250838234-40084"/>
+    <Assign_Hotkey Shortcut="Shift+Right" Description="Constrain to Edges" Id="369982487-40084"/>
+    <Assign_Hotkey Shortcut="Shift+Left" Description="Constrain to Faces" Id="1250838234-40085"/>
+    <Assign_Hotkey Shortcut="Shift+Left" Description="Constrain to Faces" Id="369982487-40085"/>
+    <Assign_Hotkey Shortcut="Shift+Up" Description="Constrain to None" Id="1250838234-40114"/>
+    <Assign_Hotkey Shortcut="Shift+Down" Description="Constrain to Normals" Id="1250838234-40108"/>
+    <Assign_Hotkey Shortcut="Shift+Down" Description="Constrain to Normals" Id="369982487-41005"/>
+    <Assign_Hotkey Shortcut="Shift+Right" Description="Edge Constraint Toggle (Poly)" Id="647394-EPoly_Toggle_Edge_Constraint`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Shift+Left" Description="Face Constraint Toggle (Poly)" Id="647394-EPoly_Toggle_Face_Constraint`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Shift+Down" Description="Normal Constraint Toggle (Poly)" Id="647394-EPoly_Toggle_Normal_Constraint`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+Up" Description="Front View" Id="0-40060"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+Down" Description="Top View" Id="0-40059"/>
+    <Assign_Hotkey Shortcut="Alt+Down" Description="Snaps Toggle" Id="0-40072"/>
+    <Assign_Hotkey Shortcut="Alt+Up" Description="Angle Snap Toggle" Id="0-40074"/>
+    <Assign_Hotkey Shortcut="Right" Description="Edge Level" Id="43597487-40079"/>
+    <Assign_Hotkey Shortcut="Right" Description="Edge Level" Id="1250838234-40004"/>
+    <Assign_Hotkey Shortcut="Right" Description="Edge Level" Id="951718758-40004"/>
+    <Assign_Hotkey Shortcut="Right" Description="Edge Level" Id="369982487-40004"/>
+    <Assign_Hotkey Shortcut="Alt+Right" Description="Shrink Selection" Id="1250838234-40040"/>
+    <Assign_Hotkey Shortcut="Alt+Right" Description="Shrink Selection" Id="369982487-40040"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+Right" Description="Perspective User View" Id="0-40182"/>
+    <Unassign_Hotkey Shortcut="4" Description="Face Level" Id="43597487-40080"/>
+    <Assign_Hotkey Shortcut="Left" Description="Polygon Level" Id="1250838234-40006"/>
+    <Assign_Hotkey Shortcut="Left" Description="Polygon Level" Id="951718758-40006"/>
+    <Assign_Hotkey Shortcut="Left" Description="Polygon Mode" Id="2077580866-40116"/>
+    <Assign_Hotkey Shortcut=";" Description="Convert to Editable Polygon" Id="647394-Convert_to_Poly`Modifier Stack"/>
+    <Assign_Hotkey Shortcut="Left" Description="Face Level" Id="369982487-40006"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+/" Description="Extrude Settings" Id="1250838234-40054"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+/" Description="Extrude Settings" Id="369982487-40054"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+." Description="Non Quad" Id="647394-NonQuad`PolyTools"/>
+    <Assign_Hotkey Shortcut="Shift+/" Description="Cap" Id="1250838234-40060"/>
+    <Assign_Hotkey Shortcut="Shift+/" Description="Cap" Id="369982487-40060"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+." Description="Inset Settings" Id="1250838234-40066"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+." Description="Inset Settings" Id="369982487-40066"/>
+    <Assign_Hotkey Shortcut="Ctrl+." Description="Bridge" Id="1250838234-40090"/>
+    <Assign_Hotkey Shortcut="Ctrl+." Description="Bridge" Id="369982487-40090"/>
+    <Assign_Hotkey Shortcut="Ctrl+/" Description="Remove" Id="1250838234-40053"/>
+    <Assign_Hotkey Shortcut="Ctrl+/" Description="Remove" Id="369982487-40053"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+." Description="Connect Edge Settings" Id="1250838234-40062"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+." Description="Connect Edge Settings" Id="369982487-40062"/>
+    <Assign_Hotkey Shortcut="Alt+K" Description="Environment Dialog Toggle" Id="0-40029"/>
+    <Assign_Hotkey Shortcut="Ctrl+," Description="Target Weld Mode" Id="1250838234-40038"/>
+    <Assign_Hotkey Shortcut="Ctrl+," Description="Target Weld Mode" Id="369982487-40038"/>
+    <Assign_Hotkey Shortcut="Ctrl+," Description="Target Weld (Poly)" Id="647394-EPoly_TargetWeld`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+," Description="Weld Target Mode" Id="951718758-40041"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+," Description="Weld Settings" Id="1250838234-40057"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+," Description="Weld Settings" Id="369982487-40057"/>
+    <Assign_Hotkey Shortcut="Alt+/" Description="Break" Id="1250838234-40011"/>
+    <Assign_Hotkey Shortcut="Alt+/" Description="Break" Id="369982487-40011"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+/" Description="Chamfer Settings" Id="1250838234-40056"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+/" Description="Chamfer Settings" Id="369982487-40056"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+/" Description="Regularize Edge Loop (Poly)" Id="647394-EditablePoly_RegularizeEdgeLoop`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+," Description="Straighten Edge" Id="647394-Straighten_edge`Veda3d.com"/>
+    <Assign_Hotkey Shortcut="Alt+." Description="Flip Normals" Id="369982487-40018"/>
+    <Assign_Hotkey Shortcut="Alt+." Description="Flip Normals" Id="1250838234-40018"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+." Description="Bevel Settings" Id="1250838234-40063"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+." Description="Bevel Settings" Id="369982487-40063"/>
+    <Assign_Hotkey Shortcut="Shift+." Description="Bevel (Poly)" Id="647394-EPoly_Bevel`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Shift+." Description="Bevel Mode" Id="1250838234-40013"/>
+    <Assign_Hotkey Shortcut="Shift+." Description="Bevel Mode" Id="951718758-40013"/>
+    <Assign_Hotkey Shortcut="Shift+." Description="Bevel Mode" Id="369982487-40013"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+/" Description="Split Edges" Id="369982487-40059"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+/" Description="Split Edges" Id="1250838234-40059"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+/" Description="Split" Id="951718758-40045"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+/" Description="Split Edges (Poly)" Id="647394-EPoly_ESplit`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+Left" Description="Select Edge Loop" Id="1250838234-40042"/>
+    <Assign_Hotkey Shortcut="Ctrl+Left" Description="Select Edge Loop" Id="369982487-40042"/>
+    <Assign_Hotkey Shortcut="Ctrl+Left" Description="Select Edge Loop" Id="647394-SelectEdgeLoop`Ribbon - Modeling"/>
+    <Assign_Hotkey Shortcut="Ctrl+Down" Description="Border Level" Id="1250838234-40005"/>
+    <Assign_Hotkey Shortcut="Ctrl+Down" Description="Border Level" Id="369982487-40005"/>
+    <Assign_Hotkey Shortcut="Ctrl+Right" Description="Select Edge Ring" Id="1250838234-40041"/>
+    <Assign_Hotkey Shortcut="Ctrl+Right" Description="Select Edge Ring" Id="369982487-40041"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+," Description="Attach" Id="1250838234-40010"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+," Description="Attach" Id="369982487-40010"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+," Description="Detach" Id="1250838234-40031"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+," Description="Detach" Id="951718758-40031"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+," Description="Detach" Id="369982487-40031"/>
+    <Assign_Hotkey Shortcut="Ctrl+`" Description="OpenSubdiv Modifier" Id="647394-OpenSubdivMod`Modifiers"/>
+    <Assign_Hotkey Shortcut="Alt+`" Description="Relax Modifier" Id="647394-Relax`Modifiers"/>
+    <Assign_Hotkey Shortcut="Shift+`" Description="CreaseSet Modifier" Id="647394-CreaseSetMod`Modifiers"/>
+    <Assign_Hotkey Shortcut="Shift+X" Description="Freeze Selection" Id="0-224"/>
+    <Assign_Hotkey Shortcut="Shift+Z" Description="Unfreeze All" Id="0-283"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Z" Description="Build Loop End" Id="647394-BuildLoopEnd`PolyTools"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+X" Description="Build Loop Corner" Id="647394-BuildLoopCorner`PolyTools"/>
+    <Assign_Hotkey Shortcut="Alt+'" Description="ProBoolean Compound Object" Id="647394-ProBoolean`Objects Compounds"/>
+    <Assign_Hotkey Shortcut="Shift+Up" Description="Select Invert" Id="0-40044"/>
+    <Assign_Hotkey Shortcut="Alt+," Description="Set Flow" Id="647394-SetFlow`PolyTools"/>
+    <Assign_Hotkey Shortcut="Alt+Z" Description="Unhide All" Id="1250838234-40033"/>
+    <Assign_Hotkey Shortcut="Alt+Z" Description="Unhide All" Id="951718758-40033"/>
+    <Assign_Hotkey Shortcut="Alt+Z" Description="Unhide All" Id="369982487-40033"/>
+    <Assign_Hotkey Shortcut="Alt+Z" Description="Unhide All" Id="0-277"/>
+    <Assign_Hotkey Shortcut="Alt+Z" Description="Unhide All" Id="2077580866-40022"/>
+    <Assign_Hotkey Shortcut="Alt+X" Description="Hide" Id="369982487-40021"/>
+    <Assign_Hotkey Shortcut="Alt+X" Description="Hide" Id="1250838234-40021"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+Z" Description="Align" Id="0-40113"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+Z" Description="Center Pivot" Id="647394-CenterPivot`PolyTools"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+X" Description="Make Planar" Id="369982487-40046"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+X" Description="Make Planar" Id="1250838234-40046"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+X" Description="Make Planar" Id="951718758-40049"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+X" Description="Make Planar" Id="647394-MakePlanar`Ribbon - Modeling"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+;" Description="MeshSmooth" Id="369982487-40048"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+;" Description="MeshSmooth" Id="1250838234-40048"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+;" Description="Quickslice Mode" Id="1250838234-40044"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+;" Description="Quickslice Mode" Id="369982487-40044"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+;" Description="Align to Face" Id="647394-Align_to_Face`_My Scripts_"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+'" Description="rapidMeshCleanUp" Id="647394-rapidMeshCleanUp`rapidTools"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+'" Description="rapidNGonSolver" Id="647394-rapidNGonSolver`rapidTools"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+'" Description="rapidQCap" Id="647394-rapidQCap`rapidTools"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+'" Description="Align Objects to Vector" Id="647394-miauuAlignObjsToVector`miauu"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+`" Description="Setup Shoe Modeling Space" Id="647394-modelingSETUP_shoe`All Commands"/>
+</MaxHotkeyTransformations>
