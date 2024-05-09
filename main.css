@@ -33,7 +33,15 @@ footer {
   top:20%;
 }
 
-
+canvas {
+  display:block;
+  z-index: -1;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=main.css.map */
 
 
