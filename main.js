@@ -13,6 +13,8 @@ camera1.position.set(24,45,90);
 camera1.lookAt(0,60,0);
 const light1 = new THREE.SpotLight(0xffffff, 90, 0, Math.PI/2, 0); 
 light1.position.set(0,25,0);
+const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
+
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
 controls.enableDamping = true;
@@ -20,13 +22,13 @@ controls.enablePan = false;
 controls.minDistance = 10;
 controls.maxDistance = 90;
 controls.minPolarAngle = 0.5;
-controls.maxPolarAngle = 1.5;
+controls.maxPolarAngle = 2.5;
 controls.autoRotate = false;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 //---MESH LOCAL----------------------------------------------------------------
-const meshData1 = new THREE.PlaneGeometry(20, 20, 32, 32); meshData1.rotateX(-Math.PI / 2);
-const material1 = new THREE.MeshStandardMaterial({color:0x555555,side: THREE.DoubleSide});
+const meshData1 = new THREE.PlaneGeometry(25, 25, 32, 32); meshData1.rotateX(-Math.PI / 2);
+const material1 = new THREE.MeshStandardMaterial({color:0xFC5600,side: THREE.DoubleSide});
 const mesh1 = new THREE.Mesh(meshData1, material1);
 
 
@@ -36,6 +38,7 @@ const mesh1 = new THREE.Mesh(meshData1, material1);
 const scene1 = new THREE.Scene();
 scene1.add(mesh1);
 scene1.add(light1);
+scene1.add(light2);
 
 //---MESH LOAD----------------------------------------------------------------
 const loader = new GLTFLoader().setPath('test/');
@@ -54,11 +57,36 @@ loader.load('test.gltf', (gltf) => {
   });
 
 
-function animate(){
+//const meshX = new Mesh()
+//?? howTo animate loaded meshes
+const loader2 = new GLTFLoader().setPath('3d/');
+loader2.load('cubeAnim1.gltf', (gltf) => {
+    const mesh3 = gltf.scene;
+    //mesh3.position.set(0, 10, -1);
+    //var mixer = new THREE.AnimationMixer(gltf.scene);
+    //var action = mixer.clipAction( gltf.animations[ 0 ] );
+	//action.play();
+    scene1.add(mesh3);
+    const mixer = new THREE.AnimationMixer(mesh3);
+            gltf.animations.forEach((clip) => {
+                mixer.clipAction(clip).play();
+            });
+
+            // Rendering loop
+            const animate = () => {
+                requestAnimationFrame(animate);
+                mixer.update(0.01); // Update animation
+                renderer1.render(scene1, camera1);
+            };
+            animate();
+    });
+//console.log(mesh3); //didnt work
+/*function animate(){
     requestAnimationFrame(animate);
-    mesh1.rotation.x += 0.01;
-    mesh1.rotation.y += 0.01;
-    mesh1.rotation.z += 0.01;
+    
+    //mesh3.rotation.x += 0.01;
+    //mesh3.rotation.y += 0.01;
+    //mesh3.rotation.z += 0.01;
     renderer1.render(scene1, camera1);
-}
-animate();
+}*/
+//animate();
