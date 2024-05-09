@@ -41,30 +41,24 @@ scene1.add(light1);
 const loader = new GLTFLoader().setPath('test/');
 loader.load('test.gltf', (gltf) => {
     const mesh = gltf.scene;
-  
     /*mesh.traverse((child) => {
       if (child.isMesh) {
         child.castShadow = true;
         child.receiveShadow = true;
       }
     });*/
-  
     mesh.position.set(0, 10, -1);
     scene1.add(mesh);
-  
-    document.getElementById('progress-container').style.display = 'none';
-  }, (xhr) => {
-    console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
-  }, (error) => {
-    console.error(error);
+    //document.getElementById('progress-container').style.display = 'block';
+  }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });
 
 
 function animate(){
     requestAnimationFrame(animate);
-    /*mesh1.rotation.x += 0.01;
+    mesh1.rotation.x += 0.01;
     mesh1.rotation.y += 0.01;
-    mesh1.rotation.z += 0.01;*/
+    mesh1.rotation.z += 0.01;
     renderer1.render(scene1, camera1);
 }
 animate();
