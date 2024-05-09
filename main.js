@@ -9,9 +9,9 @@ renderer1.setClearColor(0xd1ffc0);
 renderer1.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(25, 400 / 400, 0.1, 1000);
-camera1.position.set(4,5,11);
-camera1.lookAt(0,0,0);
-const light1 = new THREE.SpotLight(0xffffff, 3, 500, 0.2, 0.5); 
+camera1.position.set(24,45,90);
+camera1.lookAt(0,60,0);
+const light1 = new THREE.SpotLight(0xffffff, 90, 0, Math.PI/2, 0); 
 light1.position.set(0,25,0);
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
@@ -49,7 +49,7 @@ loader.load('test.gltf', (gltf) => {
       }
     });*/
   
-    mesh.position.set(0, 1.05, -1);
+    mesh.position.set(0, 10, -1);
     scene1.add(mesh);
   
     document.getElementById('progress-container').style.display = 'none';
