@@ -1,32 +1,3 @@
-@media (min-width: 450px) {
-  body {
-    background: pink;
-    background-image: url("bg2.jpg");
-  }
-  .autoplay1{width: 300px;}
-}
-@media (max-width: 449px) {
-  body {
-    background: grey;
-    background-image: url("bg2.jpg");
-    background-image: url("bg.jpg");
-    
-  }
-  .autoplay1{width: 85%;}
-}
-@font-face{
-  font-family: "Retron2000";
-  src: url("powerpuff girls font.ttf");
-}
-@font-face{
-  font-family: "Retro Gaming";
-  src: url("Retro Gaming.ttf");
-}
-* {font-family: Retron2000;}
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-
 header {
   color: white;
   z-index: 99;
@@ -56,9 +27,7 @@ footer {
   color:antiquewhite;
   bottom: 15%;
   right:5%;
-}
-.about1 a {color: beige}
-
+} .about1 a {color: beige}
 .logo1 {
   position: absolute;
   top:20%;

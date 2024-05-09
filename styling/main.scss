@@ -1,0 +1,15 @@
+@media (min-width:350px) {body {background: lime;}}
+@media (max-width:349px) {body {background: blue;}}
+$color1: red;
+$color2: lime;
+$color3: pink;
+$color4: black;
+.element {
+    width: 100px; height: 100px;background: white;margin: 10px;
+}
+div {
+    color: $color2;
+}
+p {
+    color: $color3;
+}
