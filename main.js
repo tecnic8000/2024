@@ -76,7 +76,11 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
             const animate = () => {
                 requestAnimationFrame(animate);
                 mixer.update(0.01); // Update animation
+                mesh3.rotation.x += 0.01;
+                mesh3.rotation.y += 0.01;
+                mesh3.rotation.z += 0.01;
                 renderer1.render(scene1, camera1);
+
             };
             animate();
     });
