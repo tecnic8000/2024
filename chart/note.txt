@@ -1,0 +1,15 @@
+<table>
+            <tr>
+                <th>TASK</th>
+                <th>START</th>
+                <th>END</th>
+                <th>DURATION</th>
+                <th>NOTE</th>
+                <th>STATUS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
