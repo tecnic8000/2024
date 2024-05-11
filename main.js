@@ -62,10 +62,6 @@ loader.load('test.gltf', (gltf) => {
 const loader2 = new GLTFLoader().setPath('3d/');
 loader2.load('cubeAnim1.gltf', (gltf) => {
     const mesh3 = gltf.scene;
-    //mesh3.position.set(0, 10, -1);
-    //var mixer = new THREE.AnimationMixer(gltf.scene);
-    //var action = mixer.clipAction( gltf.animations[ 0 ] );
-	//action.play();
     scene1.add(mesh3);
     const mixer = new THREE.AnimationMixer(mesh3);
             gltf.animations.forEach((clip) => {
@@ -83,6 +79,7 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
 
             };
             animate();
+    }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
     });
 //console.log(mesh3); //didnt work
 /*function animate(){
