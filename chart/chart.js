@@ -67,9 +67,9 @@ const data = {
             const start = new Date(ctx[0].raw.x[0])
             const end = new Date(ctx[0].raw.x[1])
             const duration = ctx[0].raw.duration
-            return `${start.toLocaleString([],{day:'numeric', month:'short'})} - ${end.toLocaleString([],{day:'numeric', month:'short'})} | ${duration} days`
+            return `${start.toLocaleString([],{day:'numeric', month:'short'})} - ${end.toLocaleString([],{day:'numeric', month:'short'})}`
             }}},
-        datalabels:{formatter: (val) => {return val.status}}
+        datalabels:{formatter: (val) => {return `${val.status}-${val.duration}days`}}
         }
     },
     plugins: [todayLine, ChartDataLabels],
