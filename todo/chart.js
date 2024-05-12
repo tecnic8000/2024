@@ -6,7 +6,7 @@ const data = {
             {x: ['2022-05-03', '2022-05-25'], y: 'ANIMATIC', status: 'pending', duration:'2', note:'furtherNote2\nnewLine3'},
             {x: ['2022-05-10', '2022-05-27'], y: 'COMP', status: 'done', duration:'4', note:''},
             {x: ['2022-05-10', '2022-05-25'], y: 'RENDER1', status: 'done', duration:'5', note:''},
-            {x: ['2022-05-01', '2022-05-31'], y: 'template', status: 'template', duration:'template', note:'template'}
+            {x: ['2022-05-01', '2022-05-31'], y: '//', status: '//', duration:'template', note:'template'}
         ],backgroundColor: (ctx) => {return colorCode[ctx.raw.status];} 
     }]
 };
