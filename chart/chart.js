@@ -64,7 +64,7 @@ const data = {
             const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x,y}} = chart;
             ctx.save();
             data.datasets[0].data.forEach((datapoint, index) => {
-                ctx.fillText(datapoint.status, 80, y.getPixelForValue(index)); //datapoint.x[0] doesnt work
+                ctx.fillText(datapoint.status, 80, y.getPixelForValue(index)); //datapoint.x[0], x.getPixelForValue(datapoint.x[0]) doesnt work
                 
             });
             ctx.restore();
@@ -106,7 +106,3 @@ const data = {
     document.getElementById('myChart'),
     config
   );
-const currentDate = new Date();
-//const options = { month: 'numeric', day: 'numeric' };
-const formattedDate = new Date().toLocaleDateString(undefined, { month: 'numeric', day: 'numeric' });
-console.log(formattedDate);
