@@ -2,216 +2,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>
-        
-        <!--VUE JS -->
         <!--BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         
-
-
-        <!--<style>
-            canvas {
-              -moz-user-select: none;
-              -webkit-user-select: none;
-              -ms-user-select: none;
-            }
-        </style>-->
         <style>
-          * {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-          }
-          .chartMenu {
-            width: 100vw;
-            height: 40px;
-            background: #1A1A1A;
-            color: rgba(54, 162, 235, 1);
-          }
-          .chartMenu p {
-            padding: 10px;
-            font-size: 20px;
-          }
-          .chartCard {
-            width: 100vw;
-            height: calc(100vh - 40px);
-            background: rgba(54, 162, 235, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
+          
           .chartBox {
-            width: 700px;
-            padding: 20px;
-            border-radius: 20px;
-            border: solid 3px rgba(54, 162, 235, 1);
-            background: white;
-          }
+            width: 750px;
+            height:100px;
+            background: rgba(218, 218, 218, 0.333);
+            
+            }
         </style>
     </head>
     <body>
-        <table>
-            <tr>
-                <th>TASK</th>
-                <th>START</th>
-                <th>END</th>
-                <th>DURATION</th>
-                <th>NOTE</th>
-                <th>STATUS</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-        </table>
-        <!--GANTT CHART-->
-        <div class="chartMenu">
-          <p>WWW.CHARTJS3.COM (Chart JS <span id="chartVersion"></span>)</p>
-        </div>
-        <div class="chartCard">
-          <div class="chartBox">
-            <canvas id="myChart"></canvas>
-          </div>
-        </div>
-        
-          <!--<script>
-            // Sample data for the Gantt chart
-            var ganttData = {
-              labels: ['Task 1', 'Task 2', 'Task 3'],
-              datasets: [{
-                label: 'Project',
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1,
-                data: [{
-                  x: new Date('2024-05-01'),
-                  y: new Date('2024-05-05')
-                }, {
-                  x: new Date('2024-05-06'),
-                  y: new Date('2024-05-10')
-                }, {
-                  x: new Date('2024-05-11'),
-                  y: new Date('2024-05-15')
-                }]
-              }]
-            };
-        
-            // Configuration options for the Gantt chart
-            var ganttOptions = {
-              scales: {
-                xAxes: [{
-                  type: 'time',
-                  time: {
-                    unit: 'day',
-                    displayFormats: {
-                      day: 'DD MMM'
-                    }
-                  },
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Date'
-                  }
-                }],
-                yAxes: [{
-                  type: 'category',
-                  labels: ['Project'],
-                  ticks: {
-                    beginAtZero: true
-                  },
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Tasks'
-                  }
-                }]
-              },
-              responsive: true,
-              maintainAspectRatio: false,
-              tooltips: {
-                callbacks: {
-                  title: function(tooltipItems, data) {
-                    return 'Task: ' + data.labels[tooltipItems[0].index];
-                  },
-                  label: function(tooltipItem, data) {
-                    var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
-                    return datasetLabel + ': ' + tooltipItem.xLabel.toLocaleDateString() + ' - ' + tooltipItem.yLabel.toLocaleDateString();
-                  }
-                }
-              }
-            };
-        
-            // Get the context of the canvas element we want to select
-            var ctx = document.getElementById('ganttChart').getContext('2d');
-            var myGanttChart = new Chart(ctx, {
-              type: 'horizontalBar',
-              data: ganttData,
-              options: ganttOptions
-            });
-          </script>-->
-
-
+          
+        <canvas class="chartBox" id="myChart"></canvas>
+          
         <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <!--CHARTJS https://www.chartjs.org/ -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-        
         <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-
-    <script>
-    // setup 
-    const data = {
-      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-      datasets: [{
-        label: 'Weekly Sales',
-        data: [18, 12, 6, 9, 12, 3, 9],
-        backgroundColor: [
-          'rgba(255, 26, 104, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(0, 0, 0, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, 1)'
-        ],
-        borderWidth: 1
-      }]
-    };
-
-    // config 
-    const config = {
-      type: 'bar',
-      data,
-      options: {
-        indexAxis : 'y',
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    };
-
-    // render init block
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
-
-    // Instantly assign Chart.js version
-    const chartVersion = document.getElementById('chartVersion');
-    chartVersion.innerText = Chart.version;
-    </script>
+        <script src="chart.js"></script>
+        
     </body>
 </html>
 
