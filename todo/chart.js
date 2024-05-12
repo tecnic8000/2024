@@ -65,8 +65,13 @@ console.log(data);
 console.log("Chart.js " + Chart.version);
 console.log(Date());
 
-//---WIP---WIP---WIP---WIP---WIP---WIP---
 
+
+
+
+
+
+//---WIP---WIP---WIP---WIP---WIP---WIP---
 function calculateDays() {//---DURATION CALCULATOR --------------------------------
     // Get the values of the start and end date input fields
     var startDate = new Date(document.getElementById("startDate").value);
@@ -81,7 +86,6 @@ function calculateDays() {//---DURATION CALCULATOR -----------------------------
     // Display the result
     document.getElementById("result").innerText = "Number of days between the two dates: " + daysDifference;
 }
-
 function addTask(){//---LOADS TASKS !! JS cannot write files  Chart JS Series Part 9 -----------------------------
     const taskName = document.getElementById('taskName');
     const taskStart = document.getElementById('taskStart');
