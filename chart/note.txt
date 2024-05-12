@@ -1,15 +1,14 @@
-<table>
-            <tr>
-                <th>TASK</th>
-                <th>START</th>
-                <th>END</th>
-                <th>DURATION</th>
-                <th>NOTE</th>
-                <th>STATUS</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-        </table>
+Try animation layers, bone widget, rigidify, bone manager
+Blockout a scene
+
+
+—OTHER NOTE
+
+Stickermule ads from SLS, they’re very big business with photoshop feature on web and tech, various merch type. Very good reference https://www.stickermule.com/
+
+Think of kickstart, gofundme and such
+
+-dịch vụ/agency thiết kế website và tư vấn marketing -quay, tạo dựng, sản phầm -
+-dịch vụ/agency thiết kế website và tư vấn marketing -quay, tạo dựng, sản phầm -
+https://www.pavietnam.vn/vn/dang-ky-ten-mien.html
+http://getskeleton.com/examples/landing/ <<—SKELETON CSS

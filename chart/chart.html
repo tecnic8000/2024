@@ -13,18 +13,40 @@
         </style>
     </head>
     <body>
-          
+        <!--GANTT CHART-->
         <canvas class="chartBox" id="myChart"></canvas>
+        <form></form>
+        <!--TASK-->
+        <div class="mytask">
+          -make animation of daily saigon
+          -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
+          -low level programming C++
+        </div>
+        
+        <!--NOTE-->
+        <div class="myNote id="inputfile">
           
+        </div>
+        
+        <div id="textFileContent" style="background:antiquewhite"></div>
+
         <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
         <!--CHARTJS https://www.chartjs.org/ -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
         <script src="chart.js"></script>
         
+        <script>
+            //READ NOTE.TXT
+            fetch('note.txt').then(response => response.text())
+            .then(data => {document.getElementById('textFileContent').innerText = data;})
+            //UPDATE NOTE.TXT
+
+
+        </script>
+
     </body>
 </html>
 
