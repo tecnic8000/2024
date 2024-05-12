@@ -20,14 +20,14 @@ const data = {
   const todayLine = {
     id: 'todayLine',
     afterDatasetsDraw(chart, args, pluginOptions) {
-        const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x,y}} = chart;
+        const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x, y}} = chart;
         ctx.save();
         ctx.beginPath();
-        ctx.lineWidth = 5 ;
+        ctx.lineWidth = 1 ;
         ctx.strokeStyle = 'rgba(255, 26, 104, 1)';
-        ctx.setLineDash([6,6]);
-        ctx.moveTo(x.getPixelForValue(new Date()), top);
-        ctx.lineTo(x.getPixelForValue(new Date()), bottom);
+        ctx.setLineDash([6,6]); //this one works
+        ctx.moveTo(y.getPixelForValue(new Date()), top);
+        ctx.lineTo(y.getPixelForValue(new Date()), bottom);
         ctx.stroke();
         }
     }
