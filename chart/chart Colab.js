@@ -15,12 +15,12 @@ const data = {
     datasets: [{
         label: 'projName1', //PROJECT NAME
         data: [
-            {x: ['2022-05-02', '2022-05-15'], y: 'MODELLING', status: 'PLANNED', duration:'1', pay:'900', note:'furtherNote1'},
-            {x: ['2022-05-03', '2022-05-25'], y: 'ANIMATIC', status: 'REVIEW', duration:'2', pay:'100', note:''},
-            {x: ['2022-05-02', '2022-05-05'], y: 'ANIMATION', status: 'DONE', duration:'3', pay:'250', note:''},
-            {x: ['2022-05-12', '2022-05-30'], y: 'RENDER', status: 'WORKING', duration:'4', pay:'520', note:''},
-            {x: ['2022-05-10', '2022-06-04'], y: 'COMP', status: 'PENDING', duration:'4', pay:'400', note:''},
-            {x: ['2022-05-10', '2022-06-10'], y: 'RENDER1', status: 'PENDING', duration:'5', pay:'400', note:''}
+            {x: ['2022-05-02', '2022-05-15'], y: 'MODELLING', name: 'James', status: 'PLANNED', duration:'1', pay:'900', note:'furtherNote1'},
+            {x: ['2022-05-03', '2022-05-25'], y: 'ANIMATIC', name: 'Kirk', status: 'REVIEW', duration:'2', pay:'100', note:''},
+            {x: ['2022-05-02', '2022-05-05'], y: 'ANIMATION', name: 'Jasmine', status: 'DONE', duration:'3', pay:'250', note:''},
+            {x: ['2022-05-12', '2022-05-30'], y: 'RENDER', name: 'John', status: 'WORKING', duration:'4', pay:'520', note:''},
+            {x: ['2022-05-10', '2022-06-04'], y: 'COMP', name: 'Logan', status: 'PENDING', duration:'4', pay:'400', note:''},
+            {x: ['2022-05-10', '2022-06-10'], y: 'RENDER1', name: 'Logan', status: 'PENDING', duration:'5', pay:'400', note:''}
         ],
         backgroundColor: (ctx) => {return colorCode[ctx.raw.status];} 
     }]
@@ -43,6 +43,16 @@ const data = {
             }
 
             
+    }
+    const assignedTask = { //this one works
+        id: 'assignTask',
+        afterDatasetsDraw(chart, args, pluginOptions) {
+            const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x,y}} = chart;
+            ctx.textBaseline = 'middle';
+            data.datasets[0].data.forEach((datapoint, index) => {
+                ctx.fillText(datapoint.name, 10, y.getPixelForValue(index)); // THIS WORKS
+            });
+        }
     }
 
 //-----CONFIG------------------------------------------ 
@@ -69,10 +79,10 @@ const data = {
             const duration = ctx[0].raw.duration
             return `${start.toLocaleString([],{day:'numeric', month:'short'})} - ${end.toLocaleString([],{day:'numeric', month:'short'})} | ${duration} days`
             }}},
-        datalabels:{formatter: (val) => {return val.status}}
+        datalabels:{color:'blue', formatter: (val) => {return val.status}}
         }
     },
-    plugins: [todayLine, ChartDataLabels],
+    plugins: [todayLine, assignedTask, ChartDataLabels],
     //plugins:  [],
     //options: {plugins:{datalabels:{}}}
   };
