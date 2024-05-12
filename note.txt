@@ -1,9 +1,0 @@
-ART STRUCTURE
-
-
-//---Procedural Modelling
-.first floor
-.mid floor
-.upper end
-.rooftop
-.billboards

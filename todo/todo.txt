@@ -1,3 +1,7 @@
+-make animation of daily saigon
+-💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
+-low level programming C++
+
 Try animation layers, bone widget, rigidify, bone manager
 Blockout a scene
 
@@ -12,3 +16,12 @@ Think of kickstart, gofundme and such
 -dịch vụ/agency thiết kế website và tư vấn marketing -quay, tạo dựng, sản phầm -
 https://www.pavietnam.vn/vn/dang-ky-ten-mien.html
 http://getskeleton.com/examples/landing/ <<—SKELETON CSS
+
+ART STRUCTURE
+
+//---Procedural Modelling
+.first floor
+.mid floor
+.upper end
+.rooftop
+.billboards
