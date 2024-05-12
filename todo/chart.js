@@ -1,4 +1,3 @@
-
 const colorCode = {pending:'rgba(255, 98, 179, .7)', working:'rgba(255, 206, 86, .7)',done:'rgba(16, 255, 0, .7)'}
 const data = {
     datasets: [{
