@@ -51,7 +51,43 @@
                 }
                 .autoplay1{width: 85%;}
             }
-            
+            .shopee1 {
+            position: absolute;
+            color: lime;
+            padding:5px;
+            bottom: 15%;
+            font-size: 65pt;
+            }
+            .about1 {
+            position: absolute;
+            font-size:35pt;
+            text-align: right;
+            color:antiquewhite;
+            bottom: 15%;
+            right:5%;
+            } .about1 a {color: beige}
+            .logo1 {
+            position: absolute;
+            top:20%;
+            }
+            .autoplay1{
+                display:block;
+                z-index: -1;
+                padding: 0px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #layer_crt {
+                pointer-events: none;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                opacity: 0.5;
+                padding: 0px 0px 0px 0px;
+            }
         </style>
         
 
@@ -59,7 +95,7 @@
     <body>
         <div id="layer_crt" class="crt"></div>
         <img class="logo1" src="media/logo.png" style="padding: 10px;">
-        <div class="autoplay1" style="display: none">
+        <div class="autoplay1">
             <img src="media/img1.png">
             <img src="media/img2.png">
             <img src="media/img3.png">
@@ -67,7 +103,7 @@
         </div>
         <a href="https://shopee.vn/" target="_blank" class="shopee1" ><img src="media/icon1.webp" width="200px"></a>    
         
-        <div class="about1" style="display: none">
+        <div class="about1">
             <a href="https://www.instagram.com/dyetsoda/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://discord.gg/kKuqHNt7Kp" target="_blank"><i class="bi bi-discord"></i></a>
             <a href="https://youtu.be/zNoH_oLCfGA" target="_blank"><i class="bi bi-youtube"></i></a><br>
@@ -79,7 +115,7 @@
         
         <!-- SCRIPT ZONE------SCRIPT ZONE------SCRIPT ZONE-----------------------  -->
 
-        <script type="module" src="./main.js"></script>
+        <!--<script type="module" src="./main.js"></script>-->
         <!--PYSCRIPT-->
         <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>  
         <py-script> print('Now you can!') </py-script>
@@ -105,9 +141,6 @@
               });
             });
         </script>
-        <!--THREE JS -->
-        <script></script>
-        
     </body>
 </html>
 

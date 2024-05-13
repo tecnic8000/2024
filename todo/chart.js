@@ -2,11 +2,11 @@ const colorCode = {pending:'rgba(255, 98, 179, .7)', working:'rgba(255, 206, 86,
 const data = {
     datasets: [{
         data: [
-            {x: ['2022-05-02', '2022-05-15'], y: '05-02', status: 'working', duration:'1', note:'task1'},
-            {x: ['2022-05-03', '2022-05-25'], y: '05-03', status: 'pending', duration:'2', note:'task2'},
-            {x: ['2022-05-10', '2022-05-27'], y: '05-11', status: 'done', duration:'4', note:'task3'},
-            {x: ['2022-05-10', '2022-05-25'], y: '05-10', status: 'done', duration:'5', note:'task4'},
-            {x: ['2022-05-01', '2022-05-31'], y: '05-01', status: '//', duration:'template', note:'template'}
+            {x: ['2022-05-02', '2022-05-15'], y: '05-02.', status: 'working', duration:'1', note:'task1'},
+            {x: ['2022-05-03', '2022-05-25'], y: '05-03.', status: 'pending', duration:'2', note:'task2'},
+            {x: ['2022-05-10', '2022-05-27'], y: '05-10.1', status: 'done', duration:'4', note:'task3'},
+            {x: ['2022-05-10', '2022-05-25'], y: '05-10.2', status: 'done', duration:'5', note:'task4'},
+            {x: ['2022-05-01', '2022-05-31'], y: '05-01.', status: '//', duration:'template', note:'template'}
         ],backgroundColor: (ctx) => {return colorCode[ctx.raw.status];} 
     }]
 };
@@ -16,7 +16,7 @@ const todayLine = {
             const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x, y}} = chart;
             ctx.save();
             ctx.beginPath();
-            ctx.lineWidth = 1 ;
+            ctx.lineWidth = 2 ;
             ctx.strokeStyle = 'rgba(255, 26, 104, 1)';
             ctx.moveTo(y.getPixelForValue(new Date())+25, top);
             ctx.lineTo(y.getPixelForValue(new Date())+25, bottom);
