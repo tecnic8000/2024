@@ -7,7 +7,7 @@ const scene1 = new THREE.Scene();
 const renderer1 = new THREE.WebGLRenderer({antialias: true});
 //const container = document.getElementById('canvas-container');
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
-renderer1.setSize(400, 400); //(container.clientWidth, container.clientHeight) doesnt work
+renderer1.setSize(200, 200); //(container.clientWidth, container.clientHeight) doesnt work
 renderer1.setClearColor(0xffffff);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
@@ -15,9 +15,6 @@ document.body.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(25, 400 / 400, 0.1, 1000);
 camera1.position.set(24,45,90);
 camera1.lookAt(0,60,0);
-/*const light1 = new THREE.SpotLight(0xffffff, 90, 0, Math.PI/2, 0); 
-light1.position.set(0,25,0);
-scene1.add(light1);*/
 const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 4);
 scene1.add(light2);
 
