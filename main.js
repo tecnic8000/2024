@@ -59,13 +59,6 @@ loader2.load('test.glb', (gltf) => { //cubeAnim1.gltf
                 renderer1.render(scene1, camera1);
             }; animate();
     });
-/*const loader = new GLTFLoader().setPath('3d/');
-    loader.load('test.glb', (gltf) => {
-        const mesh = gltf.scene;
-        scene1.add(mesh);
-      },(xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
-  });
-*/
 //console.log(mesh3); //didnt work
 /*function animate(){
     requestAnimationFrame(animate);
