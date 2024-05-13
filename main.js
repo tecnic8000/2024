@@ -7,15 +7,15 @@ const scene1 = new THREE.Scene();
 const renderer1 = new THREE.WebGLRenderer({antialias: true});
 //const container = document.getElementById('canvas-container');
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
-renderer1.setSize(200, 200); //(container.clientWidth, container.clientHeight) doesnt work
-renderer1.setClearColor(0xffffff);
+renderer1.setSize(350, 350); //(container.clientWidth, container.clientHeight) doesnt work
+renderer1.setClearColor(0xff3fff);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
 //container.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(25, 400 / 400, 0.1, 1000);
-camera1.position.set(24,45,90);
-camera1.lookAt(0,60,0);
-const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 4);
+camera1.position.set(320,100,300);
+camera1.lookAt(120,120,120);
+const light2 = new THREE.AmbientLight(0xffffff, 2);
 scene1.add(light2);
 
 
@@ -46,8 +46,9 @@ loader.load('test.gltf', (gltf) => {
   }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });*/
 const loader2 = new GLTFLoader().setPath('3d/');
-loader2.load('cubeAnim1.gltf', (gltf) => {
+loader2.load('test.glb', (gltf) => { //cubeAnim1.gltf
     const mesh3 = gltf.scene;
+    mesh3.scale.set(0.1, 0.1, 0.1) //used for unreal scale
     scene1.add(mesh3);
     const mixer = new THREE.AnimationMixer(mesh3);
             gltf.animations.forEach((clip) => {
@@ -59,6 +60,13 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
                 renderer1.render(scene1, camera1);
             }; animate();
     });
+/*const loader = new GLTFLoader().setPath('3d/');
+    loader.load('test.glb', (gltf) => {
+        const mesh = gltf.scene;
+        scene1.add(mesh);
+      },(xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
+  });
+*/
 //console.log(mesh3); //didnt work
 /*function animate(){
     requestAnimationFrame(animate);

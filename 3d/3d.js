@@ -60,6 +60,17 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
                 renderer1.render(scene1, camera1);
             }; animate();
     });
+
+//mesh scale test----
+const loader = new GLTFLoader().setPath('test/');
+loader.load('test.glb', (gltf) => {
+    const mesh = gltf.scene;
+    mesh.position.set(0, 10, -1);
+    scene1.add(mesh);
+  });
+
+
+
 //console.log(mesh3); //didnt work
 /*function animate(){
     requestAnimationFrame(animate);
