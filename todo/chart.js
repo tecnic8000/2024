@@ -2,11 +2,11 @@ const colorCode = {pending:'rgba(255, 98, 179, .7)', working:'rgba(255, 206, 86,
 const data = {
     datasets: [{
         data: [
-            {x: ['2022-05-02', '2022-05-15'], y: 'MODELLING', status: 'working', duration:'1', note:'furtherNote1\nnewLine'},
-            {x: ['2022-05-03', '2022-05-25'], y: 'ANIMATIC', status: 'pending', duration:'2', note:'furtherNote2\nnewLine3'},
-            {x: ['2022-05-10', '2022-05-27'], y: 'COMP', status: 'done', duration:'4', note:''},
-            {x: ['2022-05-10', '2022-05-25'], y: 'RENDER1', status: 'done', duration:'5', note:''},
-            {x: ['2022-05-01', '2022-05-31'], y: '//', status: '//', duration:'template', note:'template'}
+            {x: ['2022-05-02', '2022-05-15'], y: '05-02', status: 'working', duration:'1', note:'task1'},
+            {x: ['2022-05-03', '2022-05-25'], y: '05-03', status: 'pending', duration:'2', note:'task2'},
+            {x: ['2022-05-10', '2022-05-27'], y: '05-10', status: 'done', duration:'4', note:'task3'},
+            {x: ['2022-05-10', '2022-05-25'], y: '05-10', status: 'done', duration:'5', note:'task4'},
+            {x: ['2022-05-01', '2022-05-31'], y: '05-01', status: '//', duration:'template', note:'template'}
         ],backgroundColor: (ctx) => {return colorCode[ctx.raw.status];} 
     }]
 };
@@ -18,11 +18,11 @@ const todayLine = {
             ctx.beginPath();
             ctx.lineWidth = 1 ;
             ctx.strokeStyle = 'rgba(255, 26, 104, 1)';
-            ctx.moveTo(y.getPixelForValue(new Date()), top);
-            ctx.lineTo(y.getPixelForValue(new Date()), bottom);
+            ctx.moveTo(y.getPixelForValue(new Date())+25, top);
+            ctx.lineTo(y.getPixelForValue(new Date())+25, bottom);
             ctx.stroke();
             ctx.restore();
-            ctx.fillText(`${new Date().getDate()}-${new Date().getMonth()+1}`,y.getPixelForValue(new Date()), top);
+            ctx.fillText(`${new Date().getDate()}-${new Date().getMonth()+1}`,y.getPixelForValue(new Date())-3, 40);
         }  
 }
 const config = {
@@ -34,7 +34,7 @@ const config = {
         x: {
             position: 'top',
             type: 'time',
-            time: {displayFormats:{day:'dd'}},
+            time: {unit:'day',displayFormats:{day:'dd'}},
             min: '2022-05-01', //PROJECT START DATE
             max: '2022-05-31' //PROJECT END DATE
         }
