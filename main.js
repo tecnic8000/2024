@@ -13,8 +13,7 @@ renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
 //container.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(25, 400 / 400, 0.1, 1000);
-camera1.position.set(320,100,300);
-camera1.lookAt(120,120,120);
+camera1.position.set(100,60,100);
 const light2 = new THREE.AmbientLight(0xffffff, 2);
 scene1.add(light2);
 
@@ -25,11 +24,11 @@ const controls = new OrbitControls( camera1, renderer1.domElement );
 controls.enableDamping = true;
 controls.enablePan = false;
 controls.minDistance = 10;
-controls.maxDistance = 90;
+controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.5;
 controls.autoRotate = false;
-controls.target = new THREE.Vector3(0, 1, 0);
+controls.target = new THREE.Vector3(0, 10, 5); //change camera view here
 controls.update();
 //---MESH LOCAL----------------------------------------------------------------
 /*const meshData1 = new THREE.PlaneGeometry(25, 25, 32, 32); meshData1.rotateX(-Math.PI / 2);
