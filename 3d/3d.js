@@ -46,7 +46,7 @@ loader.load('test.gltf', (gltf) => {
     //document.getElementById('progress-container').style.display = 'block';
   }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });*/
-const loader2 = new GLTFLoader().setPath('3d/');
+const loader2 = new GLTFLoader().setPath('../3d/');
 loader2.load('cubeAnim1.gltf', (gltf) => {
     const mesh3 = gltf.scene;
     scene1.add(mesh3);
