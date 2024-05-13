@@ -8,7 +8,7 @@ const renderer1 = new THREE.WebGLRenderer({antialias: true});
 //const container = document.getElementById('canvas-container');
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
 renderer1.setSize(350, 350); //(container.clientWidth, container.clientHeight) doesnt work
-renderer1.setClearColor(0xff3fff);
+renderer1.setClearColor(0xff6fff);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
 //container.appendChild(renderer1.domElement);
