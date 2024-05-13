@@ -72,11 +72,11 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
     renderer1.render(scene1, camera1);
 }*/
 //animate();
-window.addEventListener('resize', () => {
+/*window.addEventListener('resize', () => {
     // Update camera aspect ratio
     camera1.aspect = window.innerWidth / window.innerHeight;
     camera1.updateProjectionMatrix();
     
     // Update renderer size
     renderer1.setSize(window.innerWidth, window.innerHeight);
-});
+});*/
