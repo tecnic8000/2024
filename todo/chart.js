@@ -4,7 +4,7 @@ const data = {
         data: [
             {x: ['2022-05-02', '2022-05-15'], y: '05-02', status: 'working', duration:'1', note:'task1'},
             {x: ['2022-05-03', '2022-05-25'], y: '05-03', status: 'pending', duration:'2', note:'task2'},
-            {x: ['2022-05-10', '2022-05-27'], y: '05-10', status: 'done', duration:'4', note:'task3'},
+            {x: ['2022-05-10', '2022-05-27'], y: '05-11', status: 'done', duration:'4', note:'task3'},
             {x: ['2022-05-10', '2022-05-25'], y: '05-10', status: 'done', duration:'5', note:'task4'},
             {x: ['2022-05-01', '2022-05-31'], y: '05-01', status: '//', duration:'template', note:'template'}
         ],backgroundColor: (ctx) => {return colorCode[ctx.raw.status];} 
@@ -51,9 +51,8 @@ const config = {
             }}},
         datalabels:{formatter: (val) => {
             if(val.status =='done'){
-                return `${val.status}-${val.duration}days`
-            } else {return val.status}
-            
+                return `${val.status}[${val.note}]${val.duration}days`
+            } else {return `${val.status}-${val.note}`}
         }}
         }
     },
