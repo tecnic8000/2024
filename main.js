@@ -45,7 +45,7 @@ loader.load('test.gltf', (gltf) => {
   }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });*/
 const loader2 = new GLTFLoader().setPath('3d/');
-loader2.load('test.glb', (gltf) => { //cubeAnim1.gltf
+loader2.load('test3.glb', (gltf) => { //cubeAnim1.gltf
     const mesh3 = gltf.scene;
     mesh3.scale.set(0.1, 0.1, 0.1) //used for unreal scale
     scene1.add(mesh3);
