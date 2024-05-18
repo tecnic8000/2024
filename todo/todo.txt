@@ -19,6 +19,8 @@ http://getskeleton.com/examples/landing/ <<—SKELETON CSS
 - a bionicle fanmade game (voya/metru?) with unreal
 ART STRUCTURE
 
+- a quarterly magazine/photobook
+
 //---Procedural Modelling
 .first floor
 .mid floor
