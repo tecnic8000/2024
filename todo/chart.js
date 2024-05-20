@@ -2,7 +2,7 @@ const colorCode = {pending:'rgba(255, 98, 179, .7)', working:'rgba(255, 206, 86,
 const data = {
     datasets: [{
         data: [
-            {x: ['2022-05-02', '2022-05-15'], y: '05-02.', status: 'working', duration:'1', note:'task1'},
+            {x: ['2022-05-18', '2022-05-30'], y: '05-18.', status: 'working', duration:'0', note:'Tiktok Bien Hinh'},
             {x: ['2022-05-03', '2022-05-25'], y: '05-03.', status: 'pending', duration:'2', note:'task2'},
             {x: ['2022-05-10', '2022-05-27'], y: '05-10.1', status: 'done', duration:'4', note:'task3'},
             {x: ['2022-05-10', '2022-05-25'], y: '05-10.2', status: 'done', duration:'5', note:'task4'},
