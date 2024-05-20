@@ -46,7 +46,7 @@ loader.load('test.gltf', (gltf) => {
     //document.getElementById('progress-container').style.display = 'block';
   }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });*/
-const loader2 = new GLTFLoader().setPath('../3d/');
+const loader2 = new GLTFLoader().setPath('/');
 loader2.load('cubeAnim1.gltf', (gltf) => {
     const mesh3 = gltf.scene;
     scene1.add(mesh3);
@@ -59,10 +59,11 @@ loader2.load('cubeAnim1.gltf', (gltf) => {
                 mixer.update(0.01); // Update animation
                 renderer1.render(scene1, camera1);
             }; animate();
+    }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
     });
 
 //mesh scale test----
-const loader = new GLTFLoader().setPath('test/');
+/*const loader = new GLTFLoader().setPath('test/');
 loader.load('test.glb', (gltf) => {
     const mesh = gltf.scene;
     mesh.position.set(0, 10, -1);
