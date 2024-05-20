@@ -1,3 +1,6 @@
+-gather assets and organize for PORTFOLIO
+-rework behance, vietnamworks, linkedin
+
 -make animation of daily saigon
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
 -low level programming C++
