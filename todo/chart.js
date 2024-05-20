@@ -18,8 +18,8 @@ const todayLine = {
             ctx.beginPath();
             ctx.lineWidth = 1 ;
             ctx.strokeStyle = 'rgba(255, 26, 104, 1)';
-            ctx.moveTo(y.getPixelForValue(new Date())+25, top);
-            ctx.lineTo(y.getPixelForValue(new Date())+25, bottom);
+            ctx.moveTo(y.getPixelForValue(new Date()), top);
+            ctx.lineTo(y.getPixelForValue(new Date()), bottom);
             ctx.stroke();
             ctx.restore();
             ctx.fillText(`${new Date().getDate()}-${new Date().getMonth()+1}`,y.getPixelForValue(new Date())-3, 40);
