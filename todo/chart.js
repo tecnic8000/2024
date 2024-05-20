@@ -16,7 +16,7 @@ const todayLine = {
             const { ctx, data, chartArea: { top, bottom, left, right }, scales: {x, y}} = chart;
             ctx.save();
             ctx.beginPath();
-            ctx.lineWidth = 2 ;
+            ctx.lineWidth = 1 ;
             ctx.strokeStyle = 'rgba(255, 26, 104, 1)';
             ctx.moveTo(y.getPixelForValue(new Date())+25, top);
             ctx.lineTo(y.getPixelForValue(new Date())+25, bottom);
