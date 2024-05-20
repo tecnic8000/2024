@@ -46,9 +46,10 @@ loader.load('test.gltf', (gltf) => {
     //document.getElementById('progress-container').style.display = 'block';
   }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
   });*/
-const loader2 = new GLTFLoader().setPath('/');
-loader2.load('cubeAnim1.gltf', (gltf) => {
+const loader2 = new GLTFLoader().setPath('3d/');
+loader2.load('cube3.glb', (gltf) => {
     const mesh3 = gltf.scene;
+    mesh3.scale.set(0.1, 0.1, 0.1);
     scene1.add(mesh3);
     const mixer = new THREE.AnimationMixer(mesh3);
             gltf.animations.forEach((clip) => {
