@@ -8,15 +8,14 @@ Blockout a scene
 
 —OTHER NOTE
 
-Stickermule ads from SLS, they’re very big business with photoshop feature on web and tech, various merch type. Very good reference https://www.stickermule.com/
-
-Think of kickstart, gofundme and such
+-Stickermule ads from SLS, they’re very big business with photoshop feature on web and tech, various merch type. Very good reference https://www.stickermule.com/
+-Think of kickstart, gofundme and such
 
 -dịch vụ/agency thiết kế website và tư vấn marketing -quay, tạo dựng, sản phầm -
 https://www.pavietnam.vn/vn/dang-ky-ten-mien.html
-http://getskeleton.com/examples/landing/ <<—SKELETON CSS
 
-- a bionicle fanmade game (voya/metru?) with unreal
+-how to download youubte with yt-dlp??
+- a bionicle fanmade game (voya/metru)?? with unreal
 ART STRUCTURE
 
 - a quarterly magazine/photobook
