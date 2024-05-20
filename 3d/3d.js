@@ -6,7 +6,7 @@ const scene1 = new THREE.Scene();
 
 const renderer1 = new THREE.WebGLRenderer({antialias: true});
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
-renderer1.setSize(450, 450);
+renderer1.setSize(420, 420);
 renderer1.setClearColor(0xffffff);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
