@@ -23,7 +23,7 @@ controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.5;
 controls.autoRotate = false;
-controls.target = new THREE.Vector3(0, 10, 5);
+controls.target = new THREE.Vector3(-3, 10, 5);
 controls.update();
 //---MESH LOCAL----------------------------------------------------------------
 /*const meshData1 = new THREE.PlaneGeometry(25, 25, 32, 32); meshData1.rotateX(-Math.PI / 2);
