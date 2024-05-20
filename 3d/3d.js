@@ -12,16 +12,13 @@ renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(25, 400 / 400, 0.1, 1000);
 camera1.position.set(100,40,100);
-const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 4);
+const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 5);
 scene1.add(light2);
-
-
-
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
 controls.enableDamping = true;
 controls.enablePan = false;
-controls.minDistance = 10;
+controls.minDistance = 70;
 controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.5;
@@ -59,23 +56,4 @@ loader2.load('cube3.glb', (gltf) => {
     }, (xhr) => {console.log(`loading ${xhr.loaded / xhr.total * 100}%`);}, (error) => {console.error(error);
     });
 
-//mesh scale test----
-/*const loader = new GLTFLoader().setPath('test/');
-loader.load('test.glb', (gltf) => {
-    const mesh = gltf.scene;
-    mesh.position.set(0, 10, -1);
-    scene1.add(mesh);
-  });
-
-
-
-//console.log(mesh3); //didnt work
-/*function animate(){
-    requestAnimationFrame(animate);
     
-    //mesh3.rotation.x += 0.01;
-    //mesh3.rotation.y += 0.01;
-    //mesh3.rotation.z += 0.01;
-    renderer1.render(scene1, camera1);
-}*/
-//animate();
