@@ -47,6 +47,7 @@ loader2.load('cube3.glb', (gltf) => {
     const mixer = new THREE.AnimationMixer(mesh3);
             gltf.animations.forEach((clip) => {
                 mixer.clipAction(clip).play();
+                mixer.clipAction(clip).timeScale=1.5;
             });
             const animate = () => {
                 requestAnimationFrame(animate);
