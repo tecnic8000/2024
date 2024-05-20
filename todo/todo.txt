@@ -1,8 +1,13 @@
--make a DyetSoda intro mograph (part of portfolio)
+kí-make a DyetSoda intro mograph (part of portfolio)
 -gather assets and organize for PORTFOLIO
 -rework behance, vietnamworks, linkedin
 -plan out a freelance, a studio space for hire, 879cafe
 -make animation of daily saigon
+-highPoly normal baked spaceship
+- a quarterly magazine/photobook
+-neighbor from hell env art!
+- a bionicle fanmade game (voya/metru)?? with unreal
+
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
 -low level programming C++
 
@@ -19,9 +24,6 @@ ART STRUCTURE, checkout unreal tokyo assets
 
 
 —---OTHERS
-- a quarterly magazine/photobook
--neighbor from hell env art!
-- a bionicle fanmade game (voya/metru)?? with unreal
 -how to download youubte with yt-dlp??
 
 -Stickermule ads from SLS, they’re very big business with photoshop feature on web and tech, various merch type. Very good reference https://www.stickermule.com/
