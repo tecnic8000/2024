@@ -6,7 +6,7 @@
 -highPoly normal baked spaceship
 -new base human w/ clothing with blender BaseMesh
 - a quarterly magazine/photobook
--neighbor from hell env art!
+-neighbor from hell env art! (ArchViz portfolio)
 - a bionicle fanmade game (voya/metru)?? with unreal
 
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
