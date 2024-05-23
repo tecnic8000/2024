@@ -11,7 +11,8 @@
 - a bionicle fanmade game (voya/metru)?? with unreal
 Poster art to put on local shops with slogan 'heal pills'(akira)
 - 'have you seen it'(nike) 'lost and gone' 'lost and found'
-- 'gone missing'(liminal space/backroom)
+- 'gone missing'(liminal space/backroom) 'out there in the open'
+- 'come and get me'
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
 -low level programming C++
 
