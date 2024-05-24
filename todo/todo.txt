@@ -1,17 +1,20 @@
+-highPoly normal baked spaceship
 
--make a DyetSoda intro mograph (part of portfolio)
--gather assets and organize for PORTFOLIO
--rework behance, vietnamworks, linkedin
 -plan out a freelance, a studio space for hire, 879cafe
+-new base human w/ clothing with blender BaseMesh
 
 #####
--make animation of daily saigon
+-make animation of daily saigon //dyetsoda
+-make an intro mograph //dyetsoda
 -lyly digi cookbook
+-gather assets and organize for PORTFOLIO
+-rework behance, vietnamworks, linkedin
+- a quarterly magazine/photobook //dyetsoda
+################################
+- ver2.0:neighbor from hell env art! (ArchViz portfolio)
 
--highPoly normal baked spaceship
--new base human w/ clothing with blender BaseMesh
-- a quarterly magazine/photobook
--neighbor from hell env art! (ArchViz portfolio)
+
+
 - a bionicle fanmade game (voya/metru)?? with unreal
 Poster art to put on local shops with slogan 'heal pills'(akira)
 - 'have you seen it'(nike) 'lost and gone' 'lost and found'
