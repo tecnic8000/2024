@@ -10,7 +10,7 @@ function loadComponent(componentId, filePath) {
 
 // Load components
 window.onload = function() {
-    loadComponent('header', 'header.html');
-    loadComponent('content', 'body.html');
-    loadComponent('footer', 'footer.html');
+    loadComponent('header', 'gallery/header.html');
+    loadComponent('content', 'gallery/body.html');
+    loadComponent('footer', 'gallery/footer.html');
 };
