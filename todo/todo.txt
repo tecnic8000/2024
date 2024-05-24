@@ -1,7 +1,16 @@
+ART STRUCTURE, checkout unreal tokyo assets
+//---Procedural Modelling
+.first floor
+.mid floor
+.upper end
+.rooftop
+.billboards
+
 -highPoly normal baked spaceship
 -Blockout a scene -->workflow
 -plan out a freelance, a studio space for hire, 879cafe
 -new base human w/ clothing with blender BaseMesh
+-try animation layers, bone widget, rigidify, bone manager-->virtual Fashion
 
 #####
 -make animation of daily saigon //dyetsoda
@@ -14,36 +23,18 @@ Poster art to put on local shops with slogan 'heal pills'(akira)
 - 'have you seen it'(nike) 'lost and gone' 'lost and found'
 - 'gone missing'(liminal space/backroom) 'out there in the open'
 - 'come and get me'
+-💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
+
 
 ################################
 - neighbor from hell env art! (ArchViz portfolio)
 - a bionicle fanmade game (voya/metru)?? with unreal
 
-
-
--💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
--low level programming C++
-
-Try animation layers, bone widget, rigidify, bone manager
-
-
-ART STRUCTURE, checkout unreal tokyo assets
-//---Procedural Modelling
-.first floor
-.mid floor
-.upper end
-.rooftop
-.billboards
-
-
 —---OTHERS
 -how to download youubte with yt-dlp??
-
 -Stickermule ads from SLS, they’re very big business with photoshop feature on web and tech, various merch type. Very good reference https://www.stickermule.com/
 -Think of kickstart, gofundme and such
-
 -dịch vụ/agency thiết kế website và tư vấn marketing -quay, tạo dựng, sản phầm -
 https://www.pavietnam.vn/vn/dang-ky-ten-mien.html
-
-
 -fiverr.com for 3d product animation
+-low level programming C++
