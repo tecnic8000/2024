@@ -1,5 +1,5 @@
 -highPoly normal baked spaceship
-
+-Blockout a scene -->workflow
 -plan out a freelance, a studio space for hire, 879cafe
 -new base human w/ clothing with blender BaseMesh
 
@@ -10,21 +10,22 @@
 -gather assets and organize for PORTFOLIO
 -rework behance, vietnamworks, linkedin
 - a quarterly magazine/photobook //dyetsoda
-################################
-- ver2.0:neighbor from hell env art! (ArchViz portfolio)
-
-
-
-- a bionicle fanmade game (voya/metru)?? with unreal
 Poster art to put on local shops with slogan 'heal pills'(akira)
 - 'have you seen it'(nike) 'lost and gone' 'lost and found'
 - 'gone missing'(liminal space/backroom) 'out there in the open'
 - 'come and get me'
+
+################################
+- neighbor from hell env art! (ArchViz portfolio)
+- a bionicle fanmade game (voya/metru)?? with unreal
+
+
+
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
 -low level programming C++
 
 Try animation layers, bone widget, rigidify, bone manager
-Blockout a scene
+
 
 ART STRUCTURE, checkout unreal tokyo assets
 //---Procedural Modelling
