@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modular HTML Example</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Masonry Gallery-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.min.css">
+    <style>
+        /* Define styles for grid items */
+        .grid-item {
+            width: 200px; /* Initial width, can be adjusted by Masonry.js */
+            margin-bottom: 20px;
+        }
+        .grid-item img {
+            width: 100%;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div id="header"></div>
     <div id="content"></div>
     <div id="footer"></div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="/gallery/gallery.js"></script>
 </body>
 </html>
