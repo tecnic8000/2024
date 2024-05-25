@@ -1,4 +1,4 @@
-"use strict"
+//"use strict"
 // Function to load HTML components
 function loadComponent(componentId, filePath) {
     fetch(filePath)
@@ -73,6 +73,8 @@ function gridInit() {
             gutter: 20
         }
     });
+
+
     document.addEventListener('click', documentActions);
     function documentActions(e){
         const targetElement = e.target;
@@ -96,7 +98,7 @@ function gridInit() {
 window.addEventListener('load', windowLoad);
 
 function windowLoad() {
-    loadComponent('BODY1', 'gallery/body.html');
+    //loadComponent('BODY1', 'gallery/body.html');
     imagesInit();
     gridInit();
 }
