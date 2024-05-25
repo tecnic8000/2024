@@ -1,0 +1,43 @@
+@import url(../styling/reset.css);
+.wrapper {
+}
+.page {
+}
+.articles {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+.articles__container {
+    max-width: 79.375rem;
+    margin: 0 auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+.article__title {
+}
+.articles__filter {
+}
+.filter-articles {
+}
+.filter-articles__item {
+}
+.active {
+}
+.articles__items {
+}
+.articles__item {
+}
+.article {
+}
+.articles__image {
+}
+.article__body {
+}
+.article__date {
+}
+.article__titlestatus {
+}
+.article__link-title {
+}
+.article__text {
+}
