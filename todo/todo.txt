@@ -10,7 +10,7 @@ ART STRUCTURE, checkout unreal tokyo assets
 -Blockout a scene -->workflow
 -plan out a freelance, a studio space for hire, 879cafe
 -new base human w/ clothing with blender BaseMesh
--try animation layers, bone widget, rigidify, bone manager-->virtual Fashion
+-try animation layers, bone widget, rigidify, bone manager-->idle animation for virtual Fashion
 
 #####
 -make animation of daily saigon //dyetsoda
