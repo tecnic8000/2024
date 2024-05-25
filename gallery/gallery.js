@@ -12,7 +12,7 @@ function loadComponent(componentId, filePath) {
 window.onload = function() {
     loadComponent('header', 'gallery/header.html');
     loadComponent('content', 'gallery/body.html');
-    loadComponent('footer', 'gallery/footer.html');
+    //loadComponent('footer', 'gallery/footer.html');
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var grid = document.querySelector('.grid');
 
     // Fetch images from the local folder (replace 'images/' with your folder path)
-    fetchImages('gallery/images');
+    fetchImages('gallery/images/');
 
     // Function to fetch images
     function fetchImages(folder) {
