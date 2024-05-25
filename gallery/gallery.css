@@ -57,6 +57,11 @@
     position: relative;
     border-radius: 0.1875rem;
     overflow: hidden;
+
+    padding-bottom: 60%;
+}
+.articles__image:hover img{
+    transform: scale(1.03);
 }
 .articles__image img {
     position:absolute;
@@ -65,16 +70,29 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    transition: transform 0.3s;
 }
-
-
 .article__body {
+    display: grid;
+    gap: 0.9375rem;
 }
 .article__date {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
-.article__titlestatus {
+.article__title {
+
 }
 .article__link-title {
+    color: brown;
+    line-height: 1.5;
+}
+.article__link-title:hover{
+    text-decoration: underline;
 }
 .article__text {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
