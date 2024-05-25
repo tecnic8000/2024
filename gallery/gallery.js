@@ -74,7 +74,7 @@ function gridInit() {
         }
     });
 
-
+    //FILTER BUTTON
     document.addEventListener('click', documentActions);
     function documentActions(e){
         const targetElement = e.target;
