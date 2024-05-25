@@ -78,9 +78,10 @@ function gridInit() {
     document.addEventListener('click', documentActions);
     function documentActions(e){
         const targetElement = e.target;
-        if(targetElement.closest('.filter-articles__items')){
+        if(targetElement.closest('.filter-articles__item')){
             const filterItem = targetElement.closest('.filter-articles___item');
             const filterValue = filterItem.dataset.filter;
+            const filterActiveItem = document.querySelector('.filter-articles__item.active');
 
             filterValue === "*" ? itemsGrid.arrange({filter: ``}):
                 itemsGrid.arrange({ filter: `[data-filter="${filterValue}"]`})
