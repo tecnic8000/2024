@@ -11,7 +11,7 @@ function loadComponent(componentId, filePath) {
 // Load components
 window.onload = function() {
     //loadComponent('header', 'gallery/header.html');
-    loadComponent('content', 'gallery/body.html');
+    loadComponent('BODY1', 'gallery/body.html');
     //loadComponent('footer', 'gallery/footer.html');
 };
 
