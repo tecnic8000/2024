@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var grid = document.querySelector('.grid');
 
     // Fetch images from the local folder (replace 'images/' with your folder path)
-    fetchImages('images/');
+    fetchImages('gallery/images');
 
     // Function to fetch images
     function fetchImages(folder) {
