@@ -1,3 +1,4 @@
+"use strict"
 // Function to load HTML components
 function loadComponent(componentId, filePath) {
     fetch(filePath)
@@ -7,13 +8,6 @@ function loadComponent(componentId, filePath) {
         })
         .catch(error => console.error('Error loading component:', error));
 }
-
-// Load components
-window.onload = function() {
-    //loadComponent('header', 'gallery/header.html');
-    loadComponent('BODY1', 'gallery/body.html');
-    //loadComponent('footer', 'gallery/footer.html');
-};
 
 /*document.addEventListener("DOMContentLoaded", function() {
     // Select the grid container
@@ -57,3 +51,53 @@ window.onload = function() {
     }
 });
 */
+
+/* ================================================================================================================ */
+function imagesInit() {
+    const images = document.querySelectorAll('.article__image');
+    if (images.length){
+        images.forEach(image => {
+            const imageItem = image.querySelector('img');
+            const padding = imageItem.offsetHeight / imageItem.offsetWidth * 100;
+            image.style.paddingBottom = `${padding}%`
+            imageItem.classList.add('init');
+        });
+    }
+}
+function gridInit() {
+    const items = document.querySelector('.articles__items');
+    const itemsGrid = new Isotope(items, {
+        itemSelector: '.article',
+        masonry: {
+            fitWidth: true,
+            gutter: 20
+        }
+    });
+    document.addEventListener('click', documentActions);
+    function documentActions(e){
+        const targetElement = e.target;
+        if(targetElement.closest('.filter-articles__items')){
+            const filterItem = targetElement.closest('.filter-articles___item');
+            const filterValue = filterItem.dataset.filter;
+
+            filterValue === "*" ? itemsGrid.arrange({filter: ``}):
+                itemsGrid.arrange({ filter: `[data-filter="${filterValue}"]`})
+
+            filterActiveItem.classList.remove('active');
+            filterItem.classList.add('active');
+
+
+            e.preventDefault();
+        }
+    }
+}
+
+
+window.addEventListener('load', windowLoad);
+
+function windowLoad() {
+    loadComponent('BODY1', 'gallery/body.html');
+    imagesInit();
+    gridInit();
+}
+
