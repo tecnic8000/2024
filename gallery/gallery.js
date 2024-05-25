@@ -10,12 +10,12 @@ function loadComponent(componentId, filePath) {
 
 // Load components
 window.onload = function() {
-    loadComponent('header', 'gallery/header.html');
+    //loadComponent('header', 'gallery/header.html');
     loadComponent('content', 'gallery/body.html');
     //loadComponent('footer', 'gallery/footer.html');
 };
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     // Select the grid container
     var grid = document.querySelector('.grid');
 
@@ -56,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error('Error fetching images:', error));
     }
 });
+*/
