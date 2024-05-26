@@ -12,23 +12,28 @@ ART STRUCTURE, checkout unreal tokyo assets
 -new base human w/ clothing with blender BaseMesh
 -try animation layers, bone widget, rigidify, bone manager-->idle animation for virtual Fashion
 
+
+
 #####
 -make animation of daily saigon //dyetsoda
 -make an intro mograph //dyetsoda
 -lyly digi cookbook
 -gather assets and organize for PORTFOLIO
 -rework behance, vietnamworks, linkedin
-- a quarterly magazine/photobook //dyetsoda
+a quarterly magazine/photobook //dyetsoda
 Poster art to put on local shops with slogan 'heal pills'(akira)
-- 'have you seen it'(nike) 'lost and gone' 'lost and found'
-- 'gone missing'(liminal space/backroom) 'out there in the open'
-- 'come and get me'
+'have you seen it'(nike) 'lost and gone' 'lost and found'
+'gone missing'(liminal space/backroom) 'out there in the open'
+'come and get me'
 -💡ask skater of fav tricks --> make animation&outfit --> gltf & unreal
 
+SAIGONSKATESHOP MARKETING CAMPAIGN
+    channel: tiktok, youtube, facebook
+    ?produce a game filmed in skatepark
 
 ################################
-- neighbor from hell env art! (ArchViz portfolio)
-- a bionicle fanmade game (voya/metru)?? with unreal
+neighbor from hell env art! (ArchViz portfolio)
+a bionicle fanmade game (voya/metru)?? with unreal
 
 —---OTHERS
 -how to download youubte with yt-dlp??
