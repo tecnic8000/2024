@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display CSV</title>
+</head>
+<body>
+    <input type="file" id="fileInput" />
+    <table id="csvTable"></table>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const text = e.target.result;
+                    const rows = text.split('\n');
+                    let html = '<tr>';
+                    rows[0].split(',').forEach(header => {
+                        html += `<th>${header}</th>`;
+                    });
+                    html += '</tr>';
+
+                    for (let i = 1; i < rows.length; i++) {
+                        html += '<tr>';
+                        rows[i].split(',').forEach(cell => {
+                            html += `<td>${cell}</td>`;
+                        });
+                        html += '</tr>';
+                    }
+                    document.getElementById('csvTable').innerHTML = html;
+                };
+                reader.readAsText(file);
+            }
+        });
+    </script>
+</body>
+</html>
