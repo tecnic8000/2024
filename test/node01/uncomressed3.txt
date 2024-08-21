@@ -1,0 +1,7 @@
+For personal use (ie, not in scripts) I rec
+ommend nano. A somewhat controversial choice
+among frequent terminal users, but unlike viand
+vim, nano isn't modal (ie, it's going to work the way
+you would expect a graphical text editor to work). Using
+nano will let you perform all three actions (create
+the file, edit the text, and view it) all with one command. Your syntax will be nano /path/to/file.txt. Of course, you can also use vi or vim, but if you choose to you definitely need to read about how first (if you're coming from a graphical background you've almost certainly never even heard of a modal editor before).
