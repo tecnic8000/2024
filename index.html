@@ -52,7 +52,7 @@
             z-index:9;
             position: fixed;
             font-size:25pt;
-            text-align: center;
+            text-align: end;
             letter-spacing: 15px;
             width:200px;
             border-radius: 10px 10px 0px 0px;
@@ -104,24 +104,26 @@
             
         </style>
     </head>
-    <body>
+    <body >
         <a id="note1" href="about.html"><b>STAFF PICK</b><br>coming soon..</a>
         <a id="note2" href="tranminhhoang.html"><b id="text-content">PHÒNG TRANH</b></a>
         
         
+        
 
         <!-- EXTERNAL LINKS -->
-        <div id="about1"></div>
-
-
-
+        <div id="about1">
+            <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
+            <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
 
         <!-- SCRIPT ZONE------SCRIPT ZONE------SCRIPT ZONE-----------------------  -->
         
         <script type="module" src="3d/3d.js"></script>
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <!--Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
         <!--jQuery-->
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -130,7 +132,11 @@
 
         <!-- LOCAL SCRIPT -->
         <script src="main.js" type="text/babel"></script>
-
+        <script>
+            $(document).ready(function(){
+                $('body').fadeIn('slow')
+            })
+        </script>
 
 
     </body>
