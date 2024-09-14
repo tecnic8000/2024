@@ -60,11 +60,12 @@
             z-index:9;
             position: fixed;
             font-size:25pt;
-            text-align: end;
+            text-align: center;
             letter-spacing: 15px;
-            width:200px;
-            border-radius: 10px 10px 0px 0px;
-            padding-bottom: 15px;
+            width:220px;
+            align-content: center;
+            align-items: center;
+            padding: 0px 5px;
             } #about1 a {color:white;}
             #note1{
                 width:120px ;
@@ -123,6 +124,9 @@
                 left: 50%;
                 transform: translate(210%, -560%);
             }  
+            .slick-track{
+                pointer-events: none;
+            }
         </style>
     </head>
     <body >
@@ -142,7 +146,7 @@
 
         <!-- SHOP -->
         <a id="note1" href="~shop.html">
-            <b style="color: white;">SHOP</b>
+            <b style="color: white;"><i class="bi bi-cart-fill"></i> SHOP</b>
             <div class="autoplay1">
                 <img src="media/img1.webp">
                 <img src="media/img2.webp">
