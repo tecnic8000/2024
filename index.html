@@ -64,14 +64,13 @@
                 width:120px ;
                 background: lime;
                 color: black;
-                position:absolute;
                 display: block;
                 padding: 5px;
                 position: absolute;
                 top:75%;
                 left: 30%;
                 transform: translate(-50%, -50%);
-                z-index:99;
+                z-index:9;
                 text-decoration: none;
             }
             #note2{
@@ -93,27 +92,41 @@
                 align-items:center;
                 text-decoration: none;
                 text-align: center;
-            }          
+            }
+            #visibility{
+                display: block;
+                position: absolute;
+                background-color: white;
+                font-size: 30px;
+                padding: 0 10px;
+                z-index: 9;
+                top:50%;
+                left: 50%;
+                transform: translate(-400%, -450%);
+            }  
         </style>
     </head>
     <body >
-        <a id="note1" href="about.html" ><b>STAFF PICK</b><br>coming soon..</a>
-        <a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
-        
+        <!-- GALLERY -->
+        <a id="note2" class="visON" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
+        <!-- STAFF PICK -->
+        <a id="note1" class="visON" href="about.html" ><b>STAFF PICK</b><br>coming soon..</a>
+        <!-- TOGGLE: VISIBILITY -->
+        <i class="bi bi-eye-fill" id="visibility"></i>
         <!-- EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
             <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
-        <i class="bi bi-eye-fill"></i>
+        <!-- 3D CANVAS -->
         <div class="crt" id="canvas"></div>
         
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <!--Bootstrap-->
         <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
         <!--jQuery-->
-       <script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
               $('.autoplay1').slick({
@@ -133,15 +146,15 @@
         <script type="module" src="3d/3d.js"></script>
         <script type="text/babel" src="main.js"></script>
         <script>
-            //$('canvas').addClass('crt')
             $(document).ready(function(){
-                //$('body').fadeIn('slow')
-                
-                
+                $('#visibility').click(function(){
+                    $(this).toggleClass('bi-eye-fill bi-eye-slash-fill')
+                    $('#note1').toggle()
+                    $('#note2').toggle()
+                    
+                })        
             })
         </script>
-
-
     </body>
 </html>
 
