@@ -1,12 +1,12 @@
-productID,productName,productInfo
-1,labmagazine-skate-glue-50ml__p1-p2-p3,accessories__70000__one-size:5__null_availStat
-2,labmagazine-skate-glue-100ml__p1-p2-p3,accessories__90000__black:0_white:0_clear:4__null
-3,labmagazine-skate-glue-250ml__p1-p2-p3,accessories__180000__black:5_white:0_clear:5__null
-4,nomad-cinema-3d__p1-p2-p3,deck__850000__8.0:5__null
-5,nomad-flour-jorge-cuadal__p1-p2-p3,deck__850000__8.0:5__null
-6,saigonskateshop-pushing-doodle__p1-p2-p3,deck__900000__8.0:5__null
-7,fellows-original__p1-p2-p3,deck__650000__8.0:5__sale750000
-8,pentagon-ftp__p1-p2-p3,deck__900000__8.25:5__null
-9,spitfire-f4-radial-slim__p1-p2-p3,wheels__840000__52mm-99:1__null
-10,parsecsupply-axle-nut-set__p1-p2-p3,hardware__55000__one-size:3__null
-11,parsecsupply-wax__p1-p2-p3,accessories__25000__one-size:4__null
+name,info: id_category__price__size:instock__pic__discount
+labmagazine-skate-glue-50ml,1__accessories__70000__one-size:5__123__null
+labmagazine-skate-glue-100ml,2__accessories__90000__black:0_white:0_clear:4__123__null
+labmagazine-skate-glue-250ml,3__accessories__180000__black:5_white:0_clear:5__123__null
+nomad-cinema-3d,4__deck__850000__8.0:5__123__null
+nomad-flour-jorge-cuadal,5__deck__850000__8.0:5__123__null
+saigonskateshop-pushing-doodle,6__deck__900000__8.0:5__123__null
+fellows-original,7__deck__650000__8.0:5__123__null
+pentagon-ftp,8__deck__900000__8.25:5__123__null
+spitfire-f4-radial-slim,9__wheels__840000__52mm-99:1__123__null
+parsecsupply-axle-nut-set,10__hardware__55000__one-size:3__123__null
+parsecsupply-wax,11__accessories__25000__one-size:4__123__null

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<html lang="en" id="layer_crt" class="crt">
+<html lang="en" >
     <head>
         <title>tecnic8000</title>
         <!-- 0. LOCAL-->
@@ -28,7 +28,7 @@
 
         <!-- STYLE -->
         <style>
-            @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+            /*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");*/
             html{
                 background-color: black;
                 background-image: url('media/bg3.webp');
@@ -75,42 +75,33 @@
             #note2{
                 width:140px ;
                 height:65px;
-                background: lime;
-                
-                position:absolute;
-                display: block;
-                padding: 5px;
-                position: absolute;
                 top:45%;
                 left: 40%;
                 transform: translate(-50%, -50%);
                 z-index:5;
-
+                font-size: 15px; 
+                position:absolute;
+                display: flex;
+                color: white; 
                 background-image: url('media/burn.webp'); /* Replace with your GIF image URL */
                 background-size: cover; /* Make sure the background covers the entire container */
                 background-position: center; /* Center the background image */
-                display: flex;
+                
                 justify-content: center;
                 align-items:center;
                 text-decoration: none;
-            }
-            #text-content {
-                color: white; /* Change the text color as needed */
-                font-size: 15px; /* Adjust the font size as needed */
-                text-align: center; /* Center the text horizontally */
-                z-index: 1; /* Ensure the text is above the background */
-                background: black;
+                text-align: center;
             }
             
         </style>
     </head>
     <body >
-        <a id="note1" href="about.html"><b>STAFF PICK</b><br>coming soon..</a>
-        <a id="note2" href="tranminhhoang.html"><b id="text-content">PHÒNG TRANH</b></a>
-        
-        
+        <a id="note1" href="about.html" ><b>STAFF PICK</b><br>coming soon..</a>
+        <a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
         
 
+        
+        
         <!-- EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
@@ -120,6 +111,8 @@
 
         <!-- SCRIPT ZONE------SCRIPT ZONE------SCRIPT ZONE-----------------------  -->
         
+        <!-- THREE -->
+        <div class="crt" id="canvas"></div>
         <script type="module" src="3d/3d.js"></script>
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <!--Bootstrap-->
@@ -133,8 +126,11 @@
         <!-- LOCAL SCRIPT -->
         <script src="main.js" type="text/babel"></script>
         <script>
+            //$('canvas').addClass('crt')
             $(document).ready(function(){
-                $('body').fadeIn('slow')
+                //$('body').fadeIn('slow')
+                
+                
             })
         </script>
 
