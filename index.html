@@ -74,7 +74,7 @@
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-155%, 30%);
+                transform: translate(-155%, -50%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -83,13 +83,14 @@
                 height:45px;
                 top:50%;
                 left: 50%;
-                transform: translate(-50%, -520%);
+                transform: translate(-130%, 250%);
                 z-index:5;
                 font-size: 15px; 
                 position:absolute;
                 display: flex;
                 color: white; 
-                background-image: url('media/burn.webp'); /* Replace with your GIF image URL */
+                background-color: blueviolet;
+                /*background-image: url('media/burn.webp'); /* Replace with your GIF image URL */
                 background-size: cover; /* Make sure the background covers the entire container */
                 background-position: center; /* Center the background image */
                 
@@ -107,7 +108,7 @@
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-155%, -90%);
+                transform: translate(-155%, -160%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -120,14 +121,17 @@
                 z-index: 9;
                 top:50%;
                 left: 50%;
-                transform: translate(-300%, -550%);
+                transform: translate(210%, -560%);
             }  
         </style>
     </head>
     <body >
-        <!-- GALLERY -->
-        <!--<a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>-->
-        <!-- GIVE AWAY -->
+        <!-- MEDIA -->
+        <a id="note2" href="~tranminhhoang.html"><b>PHÒNG TRANH</b></a>
+        
+        <!-- 3D CANVAS -->
+        <div class="crt" id="canvas"></div>
+        <!-- GAME -->
         <div id="note3" >
             <i class="bi bi-geo-alt-fill" id="clock" style="color: white;"></i>
             <div class="autoplay2">
@@ -135,6 +139,7 @@
                 <img src="media/spot2.webp">
             </div>
         </div>
+
         <!-- SHOP -->
         <a id="note1" href="~shop.html">
             <b style="color: white;">SHOP</b>
@@ -153,8 +158,7 @@
             <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
-        <!-- 3D CANVAS -->
-        <div class="crt" id="canvas"></div>
+        
     
         <!-- LOCAL SCRIPT -->
         <script type="module" src="3d/3d.js"></script>
@@ -166,7 +170,8 @@
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
                     $('#note2').toggle()
-                    $('#note3').toggle()                    
+                    $('#note3').toggle()
+                    $('#about1').toggle()                  
                 })
                 $('.autoplay1').slick({
                     arrows:false,
