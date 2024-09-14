@@ -64,7 +64,7 @@
             } #about1 a {color:white;}
             #note1{
                 width:150px ;
-                background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #00ff11 100%); 
+                background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #ff0000 100%); 
                 color: black;
                 display: block;
                 padding: 5px;
@@ -111,8 +111,8 @@
     <body >
         <!-- GALLERY -->
         <a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
-        <!-- STAFF PICK -->
-        <a id="note1" href="about.html"><b>SHOP</b>
+        <!-- SHOP -->
+        <a id="note1" href="about.html"><b style="color: white;">SHOP</b>
             <div class="autoplay1">
                 <img src="media/img1.webp">
                 <img src="media/img2.webp">
@@ -131,25 +131,10 @@
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas"></div>
         
-        <!--<script type="module" src="3d/fisheye.js"></script>-->
-        <!--Bootstrap-->
-        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
-        <!--jQuery-->
-        <!--<script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>-->
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $('.autoplay1').slick({
-                arrows:false,
-                infinite: true,
-                fade: true,
-                autoplay: true,
-                autoplaySpeed: 2500
-              });
-            });
-        </script>
 
         <!-- LOCAL SCRIPT -->
         <script type="module" src="3d/3d.js"></script>
+        <!--<script type="module" src="3d/fisheye.js"></script>-->
         <script type="text/babel" src="main.js"></script>
         <script>
             $(document).ready(function(){
@@ -157,7 +142,14 @@
                     $(this).toggleClass('bi-eye-fill bi-eye-slash-fill')
                     $('#note1').toggle()
                     $('#note2').toggle()                    
-                })        
+                })
+                $('.autoplay1').slick({
+                    arrows:false,
+                    infinite: true,
+                    fade: true,
+                    autoplay: true,
+                    autoplaySpeed: 2500
+              });        
             })
         </script>
     </body>
