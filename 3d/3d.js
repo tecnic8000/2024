@@ -10,12 +10,12 @@ const scene1 = new THREE.Scene();
 
 const renderer1 = new THREE.WebGLRenderer({antialias: true});
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
-renderer1.setSize(300, 300);
+renderer1.setSize(300, 420);
 renderer1.setClearColor(0x001d9e);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
-const camera1 = new THREE.PerspectiveCamera(35, 390 / 490, 0.1, 1000);
-camera1.position.set(10,13,10);
+const camera1 = new THREE.PerspectiveCamera(35, 300 / 450, 0.1, 1000);
+camera1.position.set(10,13,20);
 const light2 = new THREE.HemisphereLight(0xffffff , 0x080820, 7);
 scene1.add(light2);
 //---CONTROL----------------------------------------------------------------
@@ -27,7 +27,7 @@ controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.0;
 controls.autoRotate = false;
-controls.target = new THREE.Vector3(-1, 10, 4); //CONTROL POSITION
+controls.target = new THREE.Vector3(0, 10, 4); //CONTROL POSITION
 controls.update();
 
 const loader2 = new GLTFLoader().setPath('3d/');
