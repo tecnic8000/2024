@@ -38,7 +38,7 @@ loader2.load('3d.glb', (gltf) => {
     const mixer = new THREE.AnimationMixer(mesh3);
             gltf.animations.forEach((clip) => {
                 mixer.clipAction(clip).play();
-                mixer.clipAction(clip).timeScale=1.5;
+                mixer.clipAction(clip).timeScale=1.8;
             });
             const animate = () => {
                 requestAnimationFrame(animate);
