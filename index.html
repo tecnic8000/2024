@@ -63,15 +63,14 @@
             padding-bottom: 15px;
             } #about1 a {color:white;}
             #note1{
-                width:150px ;
-                background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #ff0000 100%); 
-                color: black;
+                width:120px ;
+                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #ff6200be 100%); 
                 display: block;
                 padding: 5px;
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-125%, 10%);
+                transform: translate(-155%, 30%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -80,7 +79,7 @@
                 height:45px;
                 top:50%;
                 left: 50%;
-                transform: translate(-70%, -140%);
+                transform: translate(-50%, -520%);
                 z-index:5;
                 font-size: 15px; 
                 position:absolute;
@@ -95,22 +94,38 @@
                 text-decoration: none;
                 text-align: center;
             }
+            #note3 {
+                width:150px ;
+                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #ff6200be 100%); 
+                color: black;
+                display: block;
+                padding: 5px;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-155%, -250%);
+                z-index:9;
+                text-decoration: none;
+            }
             #visibility{
                 display: block;
                 position: absolute;
-                background-color: white;
+                color: white;
                 font-size: 30px;
                 padding: 0 10px;
                 z-index: 9;
                 top:50%;
                 left: 50%;
-                transform: translate(-380%, -520%);
+                transform: translate(-390%, -540%);
             }  
         </style>
     </head>
     <body >
         <!-- GALLERY -->
-        <a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
+        <!--<a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>-->
+        <!-- GIVE AWAY -->
+        <div id="note3" ><i class="bi bi-geo-alt-fill" id="clock" style="color: white;">r</i>
+        </div>
         <!-- SHOP -->
         <a id="note1" href="about.html"><b style="color: white;">SHOP</b>
             <div class="autoplay1">
@@ -121,7 +136,7 @@
             </div>
         </a>
         <!-- TOGGLE: VISIBILITY -->
-        <i class="bi bi-eye-fill" id="visibility"></i>
+        <i class="bi bi-eye" id="visibility"></i>
         <!-- EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
@@ -130,8 +145,7 @@
         </div>
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas"></div>
-        
-
+    
         <!-- LOCAL SCRIPT -->
         <script type="module" src="3d/3d.js"></script>
         <!--<script type="module" src="3d/fisheye.js"></script>-->
@@ -139,7 +153,7 @@
         <script>
             $(document).ready(function(){
                 $('#visibility').click(function(){
-                    $(this).toggleClass('bi-eye-fill bi-eye-slash-fill')
+                    $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
                     $('#note2').toggle()                    
                 })
@@ -149,7 +163,22 @@
                     fade: true,
                     autoplay: true,
                     autoplaySpeed: 2500
-              });        
+              });
+              function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12; // The hour '0' should be '12'
+            const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000); // Update clock every second
+        updateClock();        
             })
         </script>
     </body>
