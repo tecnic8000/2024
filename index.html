@@ -110,7 +110,14 @@
         <!-- GALLERY -->
         <a id="note2" class="visON" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
         <!-- STAFF PICK -->
-        <a id="note1" class="visON" href="about.html" ><b>STAFF PICK</b><br>coming soon..</a>
+        <a id="note1" class="visON" href="about.html" >
+            <div class="autoplay1">
+                <img src="media/img1.png">
+                <img src="media/img2.png">
+                <img src="media/img3.png">
+                <img src="media/img4.png">
+            </div>
+        </a>
         <!-- TOGGLE: VISIBILITY -->
         <i class="bi bi-eye-fill" id="visibility"></i>
         <!-- EXTERNAL LINKS -->
@@ -150,8 +157,7 @@
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye-fill bi-eye-slash-fill')
                     $('#note1').toggle()
-                    $('#note2').toggle()
-                    
+                    $('#note2').toggle()                    
                 })        
             })
         </script>
