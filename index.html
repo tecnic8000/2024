@@ -64,7 +64,7 @@
             } #about1 a {color:white;}
             #note1{
                 width:120px ;
-                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #ff6200be 100%); 
+                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 display: block;
                 padding: 5px;
                 position: absolute;
@@ -95,15 +95,15 @@
                 text-align: center;
             }
             #note3 {
-                width:150px ;
-                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #ff6200be 100%); 
+                width:120px ;
+                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 color: black;
                 display: block;
                 padding: 5px;
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-155%, -250%);
+                transform: translate(-155%, -450%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -124,10 +124,16 @@
         <!-- GALLERY -->
         <!--<a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>-->
         <!-- GIVE AWAY -->
-        <div id="note3" ><i class="bi bi-geo-alt-fill" id="clock" style="color: white;">r</i>
+        <div id="note3" >
+            <i class="bi bi-geo-alt-fill" id="clock" style="color: white;"></i>
+            <div class="autoplay2"></div>
+                
+                
+            </div>
         </div>
         <!-- SHOP -->
-        <a id="note1" href="about.html"><b style="color: white;">SHOP</b>
+        <a id="note1" href="about.html">
+            <b style="color: white;">SHOP</b>
             <div class="autoplay1">
                 <img src="media/img1.webp">
                 <img src="media/img2.webp">
@@ -163,18 +169,26 @@
                     fade: true,
                     autoplay: true,
                     autoplaySpeed: 2500
-              });
-              function updateClock() {
-            const now = new Date();
-            let hours = now.getHours();
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            const ampm = hours >= 12 ? 'PM' : 'AM';
-            
-            hours = hours % 12;
-            hours = hours ? hours : 12; // The hour '0' should be '12'
-            const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-            document.getElementById('clock').textContent = timeString;
+                
+                });
+                $('.autoplay2').slick({
+                    arrows:false,
+                    infinite: true,
+                    fade: true,
+                    autoplay: true,
+                    autoplaySpeed: 2500
+                
+                });
+                function updateClock() {
+                    const now = new Date();
+                    let hours = now.getHours();
+                    const minutes = String(now.getMinutes()).padStart(2, '0');
+                    const seconds = String(now.getSeconds()).padStart(2, '0');
+                    const ampm = hours >= 12 ? 'PM' : 'AM';
+                    hours = hours % 12;
+                    hours = hours ? hours : 12; // The hour '0' should be '12'
+                    const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+                    document.getElementById('clock').textContent = timeString;
         }
 
         setInterval(updateClock, 1000); // Update clock every second

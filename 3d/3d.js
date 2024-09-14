@@ -15,14 +15,14 @@ renderer1.setClearColor(0x001d9e);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
 const camera1 = new THREE.PerspectiveCamera(35, 390 / 490, 0.1, 1000);
-camera1.position.set(10,10,10);
+camera1.position.set(10,13,10);
 const light2 = new THREE.HemisphereLight(0xffffff , 0x080820, 7);
 scene1.add(light2);
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
 controls.enableDamping = true;
 controls.enablePan = false;
-controls.minDistance = 40;
+controls.minDistance = 35;
 controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.0;
