@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en" >
     <head>
-        <title>tecnic8000</title>
+        <title>TECNIC 8000</title>
         <!-- 0. LOCAL-->
         <link rel="stylesheet" href="styling/crt.css">
         <link rel="icon" type="image/x-icon" href="media/favicon.ico">
@@ -11,9 +11,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- 2. JQUERY https://releases.jquery.com -->
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-        <!-- 2. BABEL --- WARNING: MUST NPM INSTALL  IN PRODUCTION  -->
+        <!-- 3. BABEL --- WARNING: MUST NPM INSTALL  IN PRODUCTION  -->
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-        <!-- 3.THREE https://threejs.org/ -->
+        <!-- 4. SLICK https://kenwheeler.github.io/slick/ -->
+        <script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>        
+        <!-- 5.THREE https://threejs.org/ -->
         <script async scr="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
         <script type="importmap">
             {
@@ -23,7 +25,7 @@
               }
             }
         </script>
-        <!-- 4. REACT https://react.dev/ -->
+        <!-- 6. REACT https://react.dev/ -->
         <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
     
@@ -48,7 +50,7 @@
             #about1 {
             background-color: black;
             display: inline-block;
-            top: 93%;
+            top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index:9;
@@ -58,27 +60,27 @@
             letter-spacing: 15px;
             width:200px;
             border-radius: 10px 10px 0px 0px;
-            padding-bottom: 55px;
+            padding-bottom: 15px;
             } #about1 a {color:white;}
             #note1{
-                width:120px ;
-                background: lime;
+                width:150px ;
+                background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #00ff11 100%); 
                 color: black;
                 display: block;
                 padding: 5px;
                 position: absolute;
-                top:75%;
-                left: 30%;
-                transform: translate(-50%, -50%);
+                top:50%;
+                left: 50%;
+                transform: translate(-140%, 10%);
                 z-index:9;
                 text-decoration: none;
             }
             #note2{
                 width:140px ;
-                height:65px;
-                top:45%;
-                left: 40%;
-                transform: translate(-50%, -50%);
+                height:45px;
+                top:50%;
+                left: 50%;
+                transform: translate(-70%, -140%);
                 z-index:5;
                 font-size: 15px; 
                 position:absolute;
@@ -102,20 +104,20 @@
                 z-index: 9;
                 top:50%;
                 left: 50%;
-                transform: translate(-400%, -450%);
+                transform: translate(-380%, -520%);
             }  
         </style>
     </head>
     <body >
         <!-- GALLERY -->
-        <a id="note2" class="visON" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
+        <a id="note2" href="tranminhhoang.html"><b>PHÒNG TRANH</b></a>
         <!-- STAFF PICK -->
-        <a id="note1" class="visON" href="about.html" >
+        <a id="note1" href="about.html"><b>SHOP</b>
             <div class="autoplay1">
-                <img src="media/img1.png">
-                <img src="media/img2.png">
-                <img src="media/img3.png">
-                <img src="media/img4.png">
+                <img src="media/img1.webp">
+                <img src="media/img2.webp">
+                <img src="media/img3.webp">
+                <img src="media/img4.webp">
             </div>
         </a>
         <!-- TOGGLE: VISIBILITY -->
@@ -133,18 +135,15 @@
         <!--Bootstrap-->
         <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
         <!--jQuery-->
-        <script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>
+        <!--<script type="text/javascript" src="weblib/slick-1.8.1/slick/slick.min.js"></script>-->
         <script type="text/javascript">
             $(document).ready(function(){
               $('.autoplay1').slick({
-                dots:true,
+                arrows:false,
                 infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
                 fade: true,
-                cssEase: 'linear'
+                autoplay: true,
+                autoplaySpeed: 2500
               });
             });
         </script>

@@ -10,13 +10,13 @@ const scene1 = new THREE.Scene();
 
 const renderer1 = new THREE.WebGLRenderer({antialias: true});
 renderer1.outputColorSpace = THREE.SRGBColorSpace;
-renderer1.setSize(420, 420);
+renderer1.setSize(390, 490);
 renderer1.setClearColor(0xffffff);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
-const camera1 = new THREE.PerspectiveCamera(25, 420 / 420, 0.1, 1000);
+const camera1 = new THREE.PerspectiveCamera(35, 390 / 490, 0.1, 1000);
 camera1.position.set(100,40,100);
-const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 5);
+const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 7);
 scene1.add(light2);
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
