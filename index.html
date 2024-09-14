@@ -95,7 +95,7 @@
                 text-align: center;
             }
             #note3 {
-                width:20px ;
+                width:120px ;
                 background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 color: black;
                 display: block;
@@ -103,7 +103,7 @@
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-155%, -120%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -126,13 +126,13 @@
         <!-- GIVE AWAY -->
         <div id="note3" >
             <i class="bi bi-geo-alt-fill" id="clock" style="color: white;"></i>
-            <div class="autoplay2"></div>
+            <div class="autoplay2">
                 <img src="media/spot1.webp">
                 <img src="media/spot2.webp">
             </div>
         </div>
         <!-- SHOP -->
-        <!--<a id="note1" href="shop.html">
+        <a id="note1" href="shop.html">
             <b style="color: white;">SHOP</b>
             <div class="autoplay1">
                 <img src="media/img1.webp">
@@ -140,7 +140,7 @@
                 <img src="media/img3.webp">
                 <img src="media/img4.webp">
             </div>
-        </a>-->
+        </a>
         <!-- TOGGLE: VISIBILITY -->
         <i class="bi bi-eye" id="visibility"></i>
         <!-- EXTERNAL LINKS -->
@@ -161,7 +161,8 @@
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
-                    $('#note2').toggle()                    
+                    $('#note2').toggle()
+                    $('#note3').toggle()                    
                 })
                 $('.autoplay1').slick({
                     arrows:false,
@@ -176,7 +177,7 @@
                     infinite: true,
                     fade: true,
                     autoplay: true,
-                    autoplaySpeed: 2500
+                    autoplaySpeed: 1500
                 
                 });
                 function updateClock() {
