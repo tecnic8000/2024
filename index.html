@@ -32,16 +32,14 @@
 
         <!-- STYLE -->
         <style>
-            /*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");*/
             html{
                 background-color: black;
                 background-image: url('media/bg3.webp');
                 background-repeat: repeat;
                 background-position: center;
             }
-            body{
-                overflow: hidden;
-            }
+            body{overflow: hidden;}
+            *{border-radius: 5px;}
             canvas {
                 display:block;
                 padding: 0px;
@@ -67,48 +65,29 @@
             padding: 0px 5px;
             } #about1 a {color:white;}
             #note1{
-                width:120px ;
-                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
+                width:120px;
+                height: 160px;
+                background: linear-gradient(-90deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 display: block;
                 padding: 5px;
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-130%, -50%);
+                transform: translate(-120%, -125%);
                 z-index:9;
                 text-decoration: none;
             }
-            #note2{
-                width:140px ;
-                height:45px;
-                top:50%;
-                left: 50%;
-                transform: translate(-110%, 250%);
-                z-index:5;
-                font-size: 15px; 
-                position:absolute;
-                display: flex;
-                color: white; 
-                background-color: blueviolet;
-                /*background-image: url('media/burn.webp'); /* Replace with your GIF image URL */
-                background-size: cover; /* Make sure the background covers the entire container */
-                background-position: center; /* Center the background image */
-                
-                justify-content: center;
-                align-items:center;
-                text-decoration: none;
-                text-align: center;
-            }
             #note3 {
                 width:120px ;
-                background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
+                height: 30px;
+                background: linear-gradient(-90deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 color: black;
                 display: block;
                 padding: 5px;
                 position: absolute;
                 top:50%;
                 left: 50%;
-                transform: translate(-130%, -160%);
+                transform: translate(-120%, -800%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -121,7 +100,7 @@
                 z-index: 9;
                 top:50%;
                 left: 50%;
-                transform: translate(210%, -560%);
+                transform: translate(200%, -560%);
             }  
             .slick-track{
                 pointer-events: none;
@@ -129,50 +108,39 @@
         </style>
     </head>
     <body >
-        <!-- MEDIA -->
-        <a id="note2" href="~tranminhhoang.html"><b>PHÒNG TRANH</b></a>
-        
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas"></div>
-        <!-- GAME -->
+        <!-- SLOT -->
         <div id="note3" >
             <i class="bi bi-geo-alt-fill" id="clock" style="color:white;"></i>
-            <div class="autoplay2">
-                <img src="media/spot1.webp">
-                <img src="media/spot2.webp">
-            </div>
+            
         </div>
 
         <!-- SHOP -->
         <a id="note1" href="~shop.html">
             <b style="color: white;"><i class="bi bi-cart-fill"></i> SHOP</b>
-            <div class="autoplay1">
-                <img src="media/img1.webp">
-                <img src="media/img2.webp">
-                <img src="media/img3.webp">
-                <img src="media/img4.webp">
+            <div class="autoplay1";">
+                <img src="media/category_trucks.webp">
+                <img src="media/category_clothing.webp">
+                <img src="media/category_sneakers.webp">
             </div>
         </a>
         <!-- TOGGLE: VISIBILITY -->
         <i class="bi bi-eye" id="visibility"></i>
-        <!-- EXTERNAL LINKS -->
+        <!-- SLOT: EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
             <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
-        
-    
         <!-- LOCAL SCRIPT -->
         <script type="module" src="3d/3d.js"></script>
         <!--<script type="module" src="3d/fisheye.js"></script>-->
-        <script type="text/babel" src="main.js"></script>
         <script>
             $(document).ready(function(){
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
-                    $('#note2').toggle()
                     $('#note3').toggle()
                     $('#about1').toggle()                  
                 })
@@ -184,23 +152,15 @@
                     autoplaySpeed: 2500
                 
                 });
-                $('.autoplay2').slick({
-                    arrows:false,
-                    infinite: true,
-                    fade: true,
-                    autoplay: true,
-                    autoplaySpeed: 1500
-                
-                });
                 function updateClock() {
                     const now = new Date();
                     let hours = now.getHours();
                     const minutes = String(now.getMinutes()).padStart(2, '0');
                     const seconds = String(now.getSeconds()).padStart(2, '0');
                     const ampm = hours >= 12 ? 'PM' : 'AM';
-                    hours = hours % 12;
-                    hours = hours ? hours : 12; // The hour '0' should be '12'
-                    const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+                    //hours = hours % 12;
+                    //hours = hours ? hours : 12; // The hour '0' should be '12'
+                    const timeString = ` ${hours}:${minutes}:${seconds}`;
                     document.getElementById('clock').textContent = timeString;
         }
 

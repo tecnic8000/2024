@@ -14,20 +14,20 @@ renderer1.setSize(300, 500);
 renderer1.setClearColor(0x001d9e);
 renderer1.setPixelRatio(1.0);
 document.body.appendChild(renderer1.domElement);
-const camera1 = new THREE.PerspectiveCamera(35, 300 / 550, 0.1, 1000);
-camera1.position.set(10,13,20);
+const camera1 = new THREE.PerspectiveCamera(45, 300 / 550, 0.1, 1000);
+camera1.position.set(5,12,10);
 const light2 = new THREE.HemisphereLight(0xffffff , 0x080820, 7);
 scene1.add(light2);
 //---CONTROL----------------------------------------------------------------
 const controls = new OrbitControls( camera1, renderer1.domElement );
 controls.enableDamping = true;
 controls.enablePan = false;
-controls.minDistance = 35;
+controls.minDistance = 25;
 controls.maxDistance = 70;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 2.0;
 controls.autoRotate = false;
-controls.target = new THREE.Vector3(0, 10, 4); //CONTROL POSITION
+controls.target = new THREE.Vector3(0, 11, 4); //CONTROL POSITION
 controls.update();
 
 const loader2 = new GLTFLoader().setPath('3d/');
