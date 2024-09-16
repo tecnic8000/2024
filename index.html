@@ -40,6 +40,7 @@
             }
             body{overflow: hidden;}
             *{border-radius: 5px;}
+            .slick-track{pointer-events: none;}
             canvas {
                 display:block;
                 padding: 0px;
@@ -102,8 +103,13 @@
                 left: 50%;
                 transform: translate(200%, -560%);
             }  
-            .slick-track{
-                pointer-events: none;
+            #progress-bar{
+                background: orange;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index:9;
             }
         </style>
     </head>
@@ -115,7 +121,8 @@
             <i class="bi bi-geo-alt-fill" id="clock" style="color:white;"></i>
             
         </div>
-
+        <!-- LOADER -->
+        <!--<img id="progress-bar" src="media/bg3.webp">-->
         <!-- SHOP -->
         <a id="note1" href="~shop.html">
             <b style="color: white;"><i class="bi bi-cart-fill"></i> SHOP</b>
@@ -125,8 +132,7 @@
                 <img src="media/category_sneakers.webp">
             </div>
         </a>
-        <!-- TOGGLE: VISIBILITY -->
-        <i class="bi bi-eye" id="visibility"></i>
+        <!-- TOGGLE: VISIBILITY --> <i class="bi bi-eye" id="visibility"></i>
         <!-- SLOT: EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
@@ -137,8 +143,10 @@
         <script type="module" src="3d/3d.js"></script>
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <script>
+            $(window).on('load', function(){
+                //$('#progress-bar').hide()
+            })
             $(document).ready(function(){
-                
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
@@ -151,7 +159,6 @@
                     fade: true,
                     autoplay: true,
                     autoplaySpeed: 2500
-                
                 });
                 function updateClock() {
                     const now = new Date();
@@ -163,10 +170,10 @@
                     //hours = hours ? hours : 12; // The hour '0' should be '12'
                     const timeString = ` ${hours}:${minutes}:${seconds}`;
                     document.getElementById('clock').textContent = timeString;
-        }
+                }
 
-        setInterval(updateClock, 1000); // Update clock every second
-        updateClock();        
+                setInterval(updateClock, 1000); // Update clock every second
+                updateClock();        
             })
         </script>
     </body>
