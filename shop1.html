@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+            td {
+                text-align: right;
+                position: relative;
+                padding-left: 50%;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 10px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    window.onload = function() {
+    const csvFilePath = 'path/to/your/file.csv'; // Specify the path to your CSV file
+
+    fetch(csvFilePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(csvData => {
+            const rows = csvData.split('\n');
+            const tableBody = document.querySelector('#dataTable tbody');
+            tableBody.innerHTML = ''; // Clear previous data
+
+            rows.forEach(row => {
+                const columns = row.split(',');
+                if (columns.length >= 2) { // Ensure there are at least two columns
+                    const newRow = document.createElement('tr');
+                    newRow.innerHTML = `
+                        <td data-label="Column 1">${columns[0]}</td>
+                        <td data-label="Column 2">${columns[1]}</td>
+                    `;
+                    tableBody.appendChild(newRow);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching the CSV file:', error));
+};
+
+
+
+
+</script>
+</body>
+</html>
