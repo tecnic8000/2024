@@ -50,12 +50,10 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            .color_white{color: white ;background: black;}
-            .color_black{color: black ;background: white;}
             .slick-track{pointer-events: none;}
             #about1 {
             background-color: black;
-            display: inline-block;
+            display: flex;
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -64,35 +62,22 @@
             font-size:25pt;
             text-align: center;
             letter-spacing: 15px;
-            width:220px;
+            width:auto;
             align-content: center;
             align-items: center;
-            padding: 0px 5px;
+            justify-content: space-between;
+            padding: 0px 15px;
             } #about1 a {color:white;}
             #note1{
                 width:120px;
-                height: 160px;
                 background: linear-gradient(-90deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
                 display: block;
                 padding: 5px;
                 position: absolute;
+                height: 140px;
                 top:50%;
                 left: 50%;
-                transform: translate(-120%, -125%);
-                z-index:9;
-                text-decoration: none;
-            }
-            #note3 {
-                width:120px ;
-                height: 30px;
-                background: linear-gradient(-90deg, rgba(2, 0, 36, 0) 0%, #000000be 100%); 
-                color: black;
-                display: block;
-                padding: 5px;
-                position: absolute;
-                top:50%;
-                left: 50%;
-                transform: translate(-120%, -800%);
+                transform: translate(-120%, -140%);
                 z-index:9;
                 text-decoration: none;
             }
@@ -102,10 +87,10 @@
                 color: white;
                 font-size: 30px;
                 padding: 0 10px;
-                z-index: 9;
+                z-index: 99;
                 top:50%;
                 left: 50%;
-                transform: translate(200%, -560%);
+                transform: translate(-120%, -560%);
             }  
             #progress-bar{
                 background: orange;
@@ -116,13 +101,11 @@
                 z-index:9;
             }
             #team1{
-                display:block;
-                padding: 0px;
-                position: absolute;
-                z-index: 9;
-                top: 50%;
-                left: 50%;
-                transform: translate(-250%, 650%);
+                font-size: 15px;
+                width: 60px;
+                color: black;
+                background: white;
+                letter-spacing: 0px;
             }
             #member1{
                 display:block;
@@ -145,23 +128,21 @@
         </style>
     </head>
     <body >
-        <!-- TOGGLE: VISIBILITY --> <i class="bi bi-eye" id="visibility"><span id="clock"></span></i>
+        <!-- TOGGLE: VISIBILITY --> 
+        <i class="bi bi-eye" id="visibility"><span id="clockHide" style="width: 80px;display:none;font-size: 20px;color:#041c9c;">¯¯¯¯¯¯¯¯</span><span id="clock" style="font-size: 20px;width: 80px;"></span></i>
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas" style="background: black;"></div>
-        <!-- SLOT -->
-        <!--<div id="note3">
-            <i class="bi bi-geo-alt-fill" id="clock" style="color:white;"></i>
-        </div>-->
         <!-- LOADER -->
         <!--<img id="progress-bar" src="media/bg3.webp">-->
         <!-- SHOP -->
         <div id="note1"">
-            <b style="color: white;"><i class="bi bi-cart-fill"></i> SHOP</b>
+            <b style="color: white;">SHOP</b>
             <div class="autoplay1";">
                 <img src="media/category_trucks.webp">
                 <img src="media/category_clothing.webp">
                 <img src="media/category_sneakers.webp">
             </div>
+            
         </div>
         <div id="shop1" style="display: none; width: 85%; height: auto; background: white;">
             <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">SHOP<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
@@ -169,7 +150,7 @@
         </div>
 
         <!-- STAFF -->
-        <div id="team1" style="width: auto; padding: 4px;" class="color_black">STAFF</div>
+        
         <div id="member1" style="display: none; font-size: 12px;width: 250px;background: white;">
             <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">STAFF<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
             <a href="https://tecnic8000.github.io/tranminhhoang/" target="_blank" style="color: black;"><i class="bi bi-link-45deg"></i></a> TRAN MINH HOANG <span style="font-style: oblique;font-weight: bold;">CREATOR</span><br>
@@ -184,6 +165,7 @@
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
             <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="mailto:tecnic8000@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+            <span id="team1" style=" padding: 4px;">STAFF</span>
             <!--<a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>-->
         </div>
 
@@ -199,11 +181,11 @@
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
-                    $('#note3').toggle()
                     $('#about1').toggle()
                     $('#team1').toggle()
+                    $('#clock').toggle()
+                    $('#clockHide').toggle()
                     if ($('#member1').css('display')==='block'){$('#member1').css('display', 'none')}
-                    
                 })
                 //--- TEAM TOGGLE
                 $('#team1').click(function(){
@@ -212,7 +194,6 @@
                     $('#visibility').toggle()
                     $('#member1').toggle()
                     $('#note1').toggle()
-                    $('#note3').toggle()
                 })
                 $('#member1').click(function(){
                     $(this).toggle()
@@ -220,13 +201,11 @@
                     //$('#visibility').toggleClass('bi-eye bi-eye-slash')
                     $('#visibility').toggle()
                     $('#note1').toggle()
-                    $('#note3').toggle()
                 })
                 //--- SHOP TOGGLE 
                 $('#note1').click(function(){
                     $(this).toggle()
                     $('#shop1').toggle()
-                    $('#note3').toggle()
                     $('#canvas').toggle()
                     $('#visibility').toggle()
                     $('#team1').toggle()
@@ -236,7 +215,6 @@
                     $('#shop1').toggle()
                     $('#visibility').toggle()
                     $('#note1').toggle()
-                    $('#note3').toggle()
                     $('#team1').toggle()
                     $('#about1').toggle()
                 })
