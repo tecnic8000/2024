@@ -38,9 +38,9 @@
                 background-repeat: repeat;
                 background-position: center;
             }
+            a{text-decoration: none;}
             body{overflow: hidden;}
             *{border-radius: 5px;}
-            .slick-track{pointer-events: none;}
             canvas {
                 display:block;
                 padding: 0px;
@@ -49,6 +49,9 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+            .color_white{color: white ;background: black;}
+            .color_black{color: black ;background: white;}
+            .slick-track{pointer-events: none;}
             #about1 {
             background-color: black;
             display: inline-block;
@@ -111,28 +114,70 @@
                 transform: translate(-50%, -50%);
                 z-index:9;
             }
+            #team1{
+                display:block;
+                padding: 0px;
+                position: absolute;
+                z-index: 9;
+                top: 50%;
+                left: 50%;
+                transform: translate(-250%, 700%);
+            }
+            #member1{
+                display:block;
+                padding: 0px;
+                position: absolute;
+                z-index: 9;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #shop1{
+                display:block;
+                padding: 0px;
+                position: absolute;
+                z-index: 99;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         </style>
     </head>
     <body >
+        <!-- TOGGLE: VISIBILITY --> <i class="bi bi-eye" id="visibility"></i>
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas" style="background: black;"></div>
         <!-- SLOT -->
-        <div id="note3" >
+        <div id="note3">
             <i class="bi bi-geo-alt-fill" id="clock" style="color:white;"></i>
-            
         </div>
         <!-- LOADER -->
         <!--<img id="progress-bar" src="media/bg3.webp">-->
         <!-- SHOP -->
-        <a id="note1" href="~shop.html">
+        <div id="note1"">
             <b style="color: white;"><i class="bi bi-cart-fill"></i> SHOP</b>
             <div class="autoplay1";">
                 <img src="media/category_trucks.webp">
                 <img src="media/category_clothing.webp">
                 <img src="media/category_sneakers.webp">
             </div>
-        </a>
-        <!-- TOGGLE: VISIBILITY --> <i class="bi bi-eye" id="visibility"></i>
+        </div>
+        <div id="shop1" style="display: none; width: 70%; height: auto; background: white;">
+            <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">SHOP<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
+            <div style="display: flex;flex-wrap: wrap;height: 500px;">COMING SOON...</div>
+        </div>
+
+        <!-- STAFF -->
+        <div id="team1" style="width: auto; padding: 4px;" class="color_black">STAFF</div>
+        <div id="member1" style="display: none; font-size: 12px;width: 250px;background: white;">
+            <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">STAFF<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
+            <a href="https://tecnic8000.github.io/tranminhhoang/" target="_blank" style="color: black;"><i class="bi bi-link-45deg"></i></a> TRAN MINH HOANG <span style="font-style: oblique;font-weight: bold;">CREATOR</span><br>
+            <!--NGUYEN NGOC THU PHUONG <span style="padding: 5px; color: white; background: black;">ARTIST</span><a href="https://tecnic8000.github.io/nguyenngocthuphuong" target="_blank" style="color: black;"><i class="bi bi-forward-fill"></i></a><br>-->
+            <a href="" target="_blank" style="color: black;"><i class="bi bi-link-45deg"></i></a> VIET KHOA <span style="font-style: oblique;font-weight: bold;">2D ARTIST</span><br>
+            <a href="https://tecnic8000.github.io/nguyenthanhtung" target="_blank" style="color: black;"><i class="bi bi-link-45deg"></i></a> NGUYEN THANH TUNG <span style="font-style: oblique;font-weight: bold;">COMPOSITOR</span>
+        </div>
+        
+        
         <!-- SLOT: EXTERNAL LINKS -->
         <div id="about1">
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
@@ -148,12 +193,56 @@
                 //$('#progress-bar').hide()
             })
             $(document).ready(function(){
+                //--- VIEW TOGGLE
                 $('#visibility').click(function(){
                     $(this).toggleClass('bi-eye bi-eye-slash')
                     $('#note1').toggle()
                     $('#note3').toggle()
-                    $('#about1').toggle()                  
+                    $('#about1').toggle()
+                    $('#team1').toggle()
+                    if ($('#member1').css('display')==='block'){$('#member1').css('display', 'none')}
+                    
                 })
+                //--- TEAM TOGGLE
+                $('#team1').click(function(){
+                    $(this).toggle()
+                    //$('#visibility').toggleClass('bi-eye bi-eye-slash')
+                    $('#visibility').toggle()
+                    $('#member1').toggle()
+                    $('#note1').toggle()
+                    $('#note3').toggle()
+                    $('#about1').toggle()
+                    
+                })
+                $('#member1').click(function(){
+                    $(this).toggle()
+                    $('#team1').toggle()
+                    //$('#visibility').toggleClass('bi-eye bi-eye-slash')
+                    $('#visibility').toggle()
+                    $('#note1').toggle()
+                    $('#note3').toggle()
+                    $('#about1').toggle()
+                    
+                })
+                //--- SHOP TOGGLE 
+                $('#note1').click(function(){
+                    $(this).toggle()
+                    $('#shop1').toggle()
+                    $('#note3').toggle()
+                    $('#canvas').toggle()
+                    $('#visibility').toggle()
+                    $('#team1').toggle()
+                    
+                })
+                $('#shop1 h6 span').click(function(){
+                    $('#shop1').toggle()
+                    $('#visibility').toggle()
+                    $('#note1').toggle()
+                    $('#note3').toggle()
+                    $('#team1').toggle()
+                })
+
+                //--- AUTO SLIDE SHOP THUMBNAIL
                 $('.autoplay1').slick({
                     arrows:false,
                     infinite: true,
@@ -161,6 +250,7 @@
                     autoplay: true,
                     autoplaySpeed: 2500
                 });
+                //--- CLOCK
                 function updateClock() {
                     const now = new Date();
                     let hours = now.getHours();
@@ -172,9 +262,11 @@
                     const timeString = ` ${hours}:${minutes}:${seconds}`;
                     document.getElementById('clock').textContent = timeString;
                 }
-
                 setInterval(updateClock, 1000); // Update clock every second
-                updateClock();        
+                updateClock();
+                //--- EVENT PARAM
+                let sale1 = "30%";
+                let code1 = "T8001";
             })
         </script>
         <script type="module" src="3d/3d.js"></script>
