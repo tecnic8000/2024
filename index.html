@@ -179,29 +179,17 @@
             $(window).on('load', function(){
                 //$('#progress-bar').hide()
             })
-            const output1 = document.getElementById('csv1')
+
+            //--- SHOP DATA
             fetch('inventory.txt')
                 .then((res) => res.text())
                 .then((text) => {
                     text.split('\n').forEach(line =>{
                         const div = document.createElement('div')
                         div.textContent = line;
-                        output1.appendChild(div);
+                        document.getElementById('csv1').appendChild(div);
                     })
-
                 })
-            
-            /*const inventory1 = fetch('inventory.txt')
-            //console.log(inventory1)
-            const content1 = inventory1.text()
-            //const line1 = inventory1.split('\n')//.filter(line => line.trim() !== '')
-            const output1 = document.getElementById('csv1')
-            /*line1.forEach((line, index)=>{
-                const div = document.createElement('div');
-                div.textContent = line;
-                output1.appendChild(div);
-            })*/
-            
             
             $(document).ready(function(){
                 //--- VIEW TOGGLE
@@ -268,56 +256,6 @@
                 }
                 setInterval(updateClock, 1000); // Update clock every second
                 updateClock();
-                //--- SHOP CSV
-
-                //-- method1
-                /*document.addEventListener('DOMContentLoaded', loadCSV);
-                    function loadCSV() {
-                        fetch('inventory.csv') // Replace 'data.csv' with the path to your file
-                            .then(response => response.text())
-                            .then(text => {
-                                const lines = text.split('\n');
-                                const container = document.getElementById('csv1');
-
-                                lines.forEach(line => {
-                                    const [name, infoId_category__price__sizeInstock__pic__discount] = line.split(',');
-
-                                    if (name && infoId_category__price__sizeInstock__pic__discount) {  // Ensure all 3 columns exist
-                                        const div = document.createElement('div');
-                                        div.classList.add('csv-box');
-                                        div.innerHTML = `<strong>${name.trim()}</strong><br>${infoId_category__price__sizeInstock__pic__discount.trim()}`;
-                                        container.appendChild(div);
-                                    }
-                                });
-                            })
-                            .catch(error => console.error('Error loading CSV file:', error));
-                    }*/
-                        /*async function loadCSV() {
-                        // Define the path to your local CSV file
-                        const csvPath = 'inventory.csv'; // Adjust the file path as needed
-                        
-                        try {
-                            // Fetch the CSV file
-                            const response = await fetch(csvPath);
-                            if (!response.ok) throw new Error("Could not fetch the CSV file.");
-                            
-                            // Parse CSV content
-                            const csvText = await response.text();
-                            const csvLines = csvText.split('\n').filter(line => line.trim() !== ''); // Split by line and ignore empty lines
-                            
-                            // Output each line as a div
-                            const outputDiv = document.getElementById("csv2");
-                            csvLines.forEach((line, index) => {
-                                const div = document.createElement("div");
-                                div.textContent = `Line ${index + 1}: ${line}`;
-                                outputDiv.appendChild(div);
-                            });
-                        } catch (error) {
-                            console.error("Error loading CSV:", error);
-                        }
-                    }
-                    // Load CSV on page load
-                    window.addEventListener("load", loadCSV);*/
                 //--- EVENT PARAM
                 let sale1 = "30%";
                 let code1 = "T8001";
