@@ -127,6 +127,9 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+            #shop2 div {
+                background: pink;
+            }
         </style>
     </head>
     <body >
@@ -148,7 +151,7 @@
         </div>
         <div id="shop1" style="display: none; width: 85%; height: auto; background: white;">
             <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">SHOP<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
-            <div id="csv1" style="display: flex;flex-wrap: wrap;height: 500px;"></div>
+            <div id="shop2" style="display: flex;flex-wrap: wrap;height: 500px;"></div>
         </div>
 
         <!-- STAFF -->
@@ -186,7 +189,7 @@
                     text.split('\n').forEach(line =>{
                         const div = document.createElement('div')
                         div.textContent = line;
-                        document.getElementById('csv1').appendChild(div);
+                        document.getElementById('shop2').appendChild(div);
                     })
                 })
             
