@@ -51,22 +51,23 @@
                 transform: translate(-50%, -50%);
             }
             .slick-track{pointer-events: none;}
-            #about1 {
+            #about1{
             background-color: black;
             display: flex;
-            top: 95%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: absolute;
+            bottom: 0;
+            margin: 15px;
             z-index:9;
-            position: fixed;
-            font-size:25pt;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size:35px;
             text-align: center;
             letter-spacing: 15px;
             width:auto;
             align-content: center;
             align-items: center;
             justify-content: space-between;
-            padding: 0px 15px;
+            padding: 5px 5px 5px 15px;
             } #about1 a {color:white;}
             #note1{
                 width:120px;
@@ -77,23 +78,10 @@
                 height: 140px;
                 top:50%;
                 left: 50%;
-                transform: translate(-120%, -140%);
+                transform: translate(-120%, -170%);
                 z-index:9;
                 text-decoration: none;
             }
-            #visibility{
-                display: block;
-                position: absolute;
-                color: white;
-                font-size: 30px;
-                padding: 0 10px;
-                z-index: 99;
-                top:50%;
-                left: 50%;
-                transform: translate(-120%, -560%);
-                align-items: center;
-                align-content: center;
-            }  
             #progress-bar{
                 background: orange;
                 position: absolute;
@@ -129,12 +117,34 @@
             }
             #shop2 div {
                 background: pink;
+                width: 100px;
+                height: 100px;
+            }
+            #bar1{
+                position: absolute;
+                top: 0;
+                width:100%;
+                background: black;
+                color: white;
+                border-radius: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 25px;
             }
         </style>
     </head>
     <body >
         <!-- TOGGLE: VISIBILITY --> 
-        <i class="bi bi-eye" id="visibility"><span id="clockHide" style="width: 80px;display:none;font-size: 20px;color:#041c9c;">¯¯¯¯¯¯¯¯</span><span id="clock" style="font-size: 20px;width: 80px;"></span></i>
+         <div id="bar1">
+            <span>&nbsp;TECNIC 8000</span> 
+            <span>
+                <span id="clock" style="width: 100px;"></span>
+                &nbsp;<i class="bi bi-eye" id="visibility"></i>&nbsp;&nbsp;
+            </span>
+            
+         </div>
+        
         <!-- 3D CANVAS -->
         <div class="crt" id="canvas" style="background: black;"></div>
         <!-- LOADER -->
@@ -170,7 +180,7 @@
             <a href="https://discord.gg/cBRbkCvEm7" target="_blank"><i class="bi bi-discord"></i></a>
             <a href="https://www.instagram.com/tecnic8000/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="mailto:tecnic8000@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-            <span id="team1" style=" padding: 4px;">TEAM</span>
+            <!--<span id="team1" style=" padding: 4px;">TEAM</span>-->
             <!--<a href="https://youtube.com/@tecnic8000" target="_blank"><i class="bi bi-youtube"></i></a>-->
         </div>
 
@@ -178,9 +188,12 @@
         
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <script>
-            $(window).on('load', function(){
-                //$('#progress-bar').hide()
-            })
+            document.body.style.overflow = 'hidden';
+            const urlParams = new URLSearchParams(window.location.search);
+            const link = urlParams.get('l');
+            switch (link){
+                case '1': console.log(link);
+            }
 
             //--- SHOP DATA
             fetch('inventory.txt')
