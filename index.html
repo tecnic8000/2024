@@ -43,7 +43,7 @@
                 border-radius:0px;
             }
             a{text-decoration: none;}
-            body{overflow: hidden;}
+            /*body{overflow: hidden;}*/
             canvas {
                 display:block;
                 padding: 0px;
@@ -126,7 +126,7 @@
                 column-gap: 10px;
                 row-gap: 10px;
                 justify-content: space-around;
-                box-sizing: border-box;
+                overflow-y: auto;
             }
             #shop2 div {
                 background: red;
@@ -201,7 +201,7 @@
         <!--<script type="module" src="3d/fisheye.js"></script>-->
         <script type="module" src="3d/3d.js"></script>
         <script>
-            document.body.style.overflow = 'hidden';
+            //document.body.style.overflow = 'hidden';
             const urlParams = new URLSearchParams(window.location.search);
             const link = urlParams.get('l');
             switch (link){
