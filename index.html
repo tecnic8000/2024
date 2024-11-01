@@ -32,6 +32,8 @@
 
         <!-- STYLE -->
         <style>
+            @font-face{font-family: "E1234";src: url("styling/E1234.ttf")}
+            @font-face{font-family: "Modenine";src: url("styling/Modenine-2OPd.ttf")}
             *{border-radius:5px;}
             html{
                 background-color: black;
@@ -50,6 +52,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
             .slick-track{pointer-events: none;}
             #about1{
             background-color: black;
@@ -115,11 +118,16 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            #shop2 div {
-                background: pink;
-                width: 100px;
-                height: 100px;
+            #shop2 {
+                height: 500px;
+                display: grid;
+                grid-template-columns: 100px 100px ;
+                grid-template-rows: 80px 80px; 
+                column-gap: 10px;
+                row-gap: 10px;
+                justify-content: space-around;
             }
+            #shop2 div {background: red;}
             #bar1{
                 position: absolute;
                 top: 0;
@@ -137,9 +145,9 @@
     <body >
         <!-- TOGGLE: VISIBILITY --> 
          <div id="bar1">
-            <span>&nbsp;TECNIC 8000</span> 
+            <span style="font-family: Modenine;">&nbsp;TECNIC 8000</span> 
             <span>
-                <span id="clock" style="width: 100px;"></span>
+                <span id="clock" style="width: 100px; font-family: E1234; font-size: 20px;"></span>
                 &nbsp;<i class="bi bi-eye" id="visibility"></i>&nbsp;&nbsp;
             </span>
             
@@ -161,7 +169,7 @@
         </div>
         <div id="shop1" style="display: none; width: 85%; height: auto; background: white;">
             <h6 style="border-radius: 0px ;padding: 5px;background: linear-gradient(180deg, rgba(216, 214, 255, 0) 0%, #a3a3a3be 100%);">SHOP<span style="float: right;"><i class="bi bi-dash-circle-fill" ></i> <i class="bi bi-stop-circle-fill" ></i> <i class="bi bi-x-circle-fill" style="color: red;"></i></span></h6>
-            <div id="shop2" style="display: flex;flex-wrap: wrap;height: 500px;"></div>
+            <div id="shop2" style=""></div>
         </div>
 
         <!-- STAFF -->
@@ -187,6 +195,7 @@
         <!-- LOCAL SCRIPT -->
         
         <!--<script type="module" src="3d/fisheye.js"></script>-->
+        <script type="module" src="3d/3d.js"></script>
         <script>
             document.body.style.overflow = 'hidden';
             const urlParams = new URLSearchParams(window.location.search);
@@ -201,7 +210,7 @@
                 .then((text) => {
                     text.split('\n').forEach(line =>{
                         const div = document.createElement('div')
-                        div.textContent = line;
+                        div.textContent = line.split(',')[0].replace('-', ' ')+line.split(',')[1].split('__')[2];
                         document.getElementById('shop2').appendChild(div);
                     })
                 })
@@ -277,7 +286,7 @@
                 
             })
         </script>
-        <script type="module" src="3d/3d.js"></script>
+        
     </body>
 </html>
 
