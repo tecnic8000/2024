@@ -126,8 +126,12 @@
                 column-gap: 10px;
                 row-gap: 10px;
                 justify-content: space-around;
+                box-sizing: border-box;
             }
-            #shop2 div {background: red;}
+            #shop2 div {
+                background: red;
+                box-sizing: border-box;
+            }
             #bar1{
                 position: absolute;
                 top: 0;
@@ -145,7 +149,7 @@
     <body >
         <!-- TOGGLE: VISIBILITY --> 
          <div id="bar1">
-            <span>&nbsp;TECNIC 8000</span> 
+            <b>&nbsp;TECNIC 8000</b> 
             <span>
                 <span id="clock" style="width: 100px; font-family: E1234; font-size: 20px;"></span>
                 &nbsp;<i class="bi bi-eye" id="visibility"></i>&nbsp;&nbsp;
